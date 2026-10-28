@@ -83,10 +83,6 @@ tasks.register<JavaExec>("smokeTest"){
 tasks.jar{
     archiveFileName.set("${projectName}Desktop.jar")
 
-    from(configurations.runtimeClasspath.map{ files ->
-        files.map{ if(it.isDirectory) it else zipTree(it) }
-    })
-
     from(projectDir){
         include("mod.hjson")
         include("icon.png")
