@@ -1,0 +1,5 @@
+movement,durability,attackers,seconds,incoming_damage
+stationary,0,12,10,4536.000
+stationary,5,12,10,3854.813
+orbit,0,12,10,306.000
+orbit,5,12,10,260.047

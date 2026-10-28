@@ -1,0 +1,1057 @@
+ship,weapon,penetration,loadout,target,range_tiles,harassers,fire_pattern,duration_s,player_alive,player_hp_lost,target_killed,target_hp_lost,target_shield_left,harassers_killed,corroded_ticks,penetration_ticks,moving_ticks,average_speed,enemy_shots,target_armor,beam_damage,aim_strategy,movement
+alpha,flamethrower,n/a,neutral,dagger,5,3,hold,20.000,true,108.000,false,0.000,0.000,0,0,0,1200,2.296,294,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,3,hold,1.733,true,18.000,true,150.000,0.000,0,0,0,104,2.269,27,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,dagger,5,3,hold,2.750,true,18.000,true,150.000,0.000,0,76,0,165,2.287,44,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,5,3,hold,2.750,true,18.000,true,150.000,0.000,0,76,75,165,2.287,44,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,dagger,12,3,hold,2.750,true,18.000,true,150.000,0.000,0,76,0,165,2.214,33,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,12,3,hold,2.750,true,18.000,true,150.000,0.000,0,76,75,165,2.214,33,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,3,hold,7.483,true,144.000,true,150.000,0.000,0,0,0,449,2.320,116,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,3,hold,1.867,true,0.000,true,150.000,0.000,0,0,0,112,2.213,29,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,dagger,5,3,hold,2.750,true,36.000,true,150.000,0.000,0,76,0,165,2.280,43,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,5,3,hold,2.750,true,36.000,true,150.000,0.000,0,76,75,165,2.280,43,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,dagger,12,3,hold,2.750,true,72.000,true,150.000,0.000,0,76,0,165,2.275,28,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,12,3,hold,2.750,true,72.000,true,150.000,0.000,0,76,75,165,2.275,28,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,3,1s on / .5s off,20.000,true,108.000,false,0.000,0.000,0,0,0,1200,2.296,294,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,3,1s on / .5s off,2.217,true,18.000,true,150.000,0.000,0,0,0,133,2.275,34,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,dagger,5,3,1s on / .5s off,3.717,true,18.000,true,150.000,0.000,0,81,0,223,2.264,57,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,5,3,1s on / .5s off,3.717,true,18.000,true,150.000,0.000,0,81,80,223,2.264,57,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,dagger,12,3,1s on / .5s off,3.717,true,36.000,true,150.000,0.000,0,81,0,223,2.193,42,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,12,3,1s on / .5s off,3.717,true,36.000,true,150.000,0.000,0,81,80,223,2.193,42,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,3,1s on / .5s off,7.483,true,144.000,true,150.000,0.000,0,0,0,449,2.320,116,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,3,1s on / .5s off,2.500,true,27.000,true,150.000,0.000,0,0,0,150,2.237,40,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,dagger,5,3,1s on / .5s off,3.717,true,54.000,true,150.000,0.000,0,81,0,223,2.325,56,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,5,3,1s on / .5s off,3.717,true,54.000,true,150.000,0.000,0,81,80,223,2.325,56,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,dagger,12,3,1s on / .5s off,3.717,true,99.000,true,150.000,0.000,0,81,0,223,2.330,36,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,12,3,1s on / .5s off,3.717,true,99.000,true,150.000,0.000,0,81,80,223,2.330,36,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,10,hold,18.750,false,150.000,false,0.000,0.000,0,0,0,1125,2.300,719,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,10,hold,1.733,true,27.000,true,150.000,0.000,0,0,0,104,2.269,69,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,dagger,5,10,hold,2.750,true,27.000,true,150.000,0.000,0,76,0,165,2.287,109,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,5,10,hold,2.750,true,27.000,true,150.000,0.000,0,76,75,165,2.287,109,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,dagger,12,10,hold,2.750,true,99.000,true,150.000,0.000,0,76,0,165,2.214,78,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,12,10,hold,2.750,true,99.000,true,150.000,0.000,0,76,75,165,2.214,78,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,10,hold,3.567,false,150.000,false,68.385,0.000,0,0,0,214,2.297,139,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,10,hold,1.867,true,27.000,true,150.000,0.000,0,0,0,112,2.213,76,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,dagger,5,10,hold,2.750,true,108.000,true,150.000,0.000,0,76,0,165,2.280,114,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,5,10,hold,2.750,true,108.000,true,150.000,0.000,0,76,75,165,2.280,114,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,dagger,12,10,hold,2.750,true,135.000,true,150.000,0.000,0,76,0,165,2.275,74,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,12,10,hold,2.750,true,135.000,true,150.000,0.000,0,76,75,165,2.275,74,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,10,1s on / .5s off,18.750,false,150.000,false,0.000,0.000,0,0,0,1125,2.300,719,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,10,1s on / .5s off,2.217,true,27.000,true,150.000,0.000,0,0,0,133,2.275,86,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,dagger,5,10,1s on / .5s off,3.717,true,36.000,true,150.000,0.000,0,81,0,223,2.264,146,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,5,10,1s on / .5s off,3.717,true,36.000,true,150.000,0.000,0,81,80,223,2.264,146,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,dagger,12,10,1s on / .5s off,3.717,true,126.000,true,150.000,0.000,0,81,0,223,2.193,104,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,dagger,12,10,1s on / .5s off,3.717,true,126.000,true,150.000,0.000,0,81,80,223,2.193,104,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,dagger,5,10,1s on / .5s off,3.567,false,150.000,false,68.385,0.000,0,0,0,214,2.297,139,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,dagger,5,10,1s on / .5s off,2.500,true,81.000,true,150.000,0.000,0,0,0,150,2.237,103,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,dagger,5,10,1s on / .5s off,3.567,false,150.000,false,126.800,0.000,0,72,0,214,2.297,139,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,5,10,1s on / .5s off,3.567,false,150.000,false,126.800,0.000,0,72,71,214,2.297,139,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,dagger,12,10,1s on / .5s off,2.817,false,150.000,false,56.000,0.000,0,27,0,169,2.292,76,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,dagger,12,10,1s on / .5s off,2.817,false,150.000,false,56.000,0.000,0,27,26,169,2.292,76,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,3,hold,20.000,true,91.800,false,0.000,0.000,0,0,0,1200,2.296,294,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,3,hold,1.733,true,15.300,true,150.000,0.000,0,0,0,104,2.269,27,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,dagger,5,3,hold,2.750,true,15.300,true,150.000,0.000,0,76,0,165,2.287,44,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,5,3,hold,2.750,true,15.300,true,150.000,0.000,0,76,75,165,2.287,44,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,dagger,12,3,hold,2.750,true,15.300,true,150.000,0.000,0,76,0,165,2.214,33,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,12,3,hold,2.750,true,15.300,true,150.000,0.000,0,76,75,165,2.214,33,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,3,hold,7.483,true,122.400,true,150.000,0.000,0,0,0,449,2.320,116,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,3,hold,1.867,true,0.000,true,150.000,0.000,0,0,0,112,2.213,29,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,dagger,5,3,hold,2.750,true,30.600,true,150.000,0.000,0,76,0,165,2.280,43,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,5,3,hold,2.750,true,30.600,true,150.000,0.000,0,76,75,165,2.280,43,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,dagger,12,3,hold,2.750,true,61.200,true,150.000,0.000,0,76,0,165,2.275,28,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,12,3,hold,2.750,true,61.200,true,150.000,0.000,0,76,75,165,2.275,28,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,3,1s on / .5s off,20.000,true,91.800,false,0.000,0.000,0,0,0,1200,2.296,294,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,3,1s on / .5s off,2.217,true,15.300,true,150.000,0.000,0,0,0,133,2.275,34,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,dagger,5,3,1s on / .5s off,3.717,true,15.300,true,150.000,0.000,0,81,0,223,2.264,57,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,5,3,1s on / .5s off,3.717,true,15.300,true,150.000,0.000,0,81,80,223,2.264,57,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,dagger,12,3,1s on / .5s off,3.717,true,30.600,true,150.000,0.000,0,81,0,223,2.193,42,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,12,3,1s on / .5s off,3.717,true,30.600,true,150.000,0.000,0,81,80,223,2.193,42,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,3,1s on / .5s off,7.483,true,122.400,true,150.000,0.000,0,0,0,449,2.320,116,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,3,1s on / .5s off,2.500,true,22.950,true,150.000,0.000,0,0,0,150,2.237,40,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,dagger,5,3,1s on / .5s off,3.717,true,45.900,true,150.000,0.000,0,81,0,223,2.325,56,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,5,3,1s on / .5s off,3.717,true,45.900,true,150.000,0.000,0,81,80,223,2.325,56,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,dagger,12,3,1s on / .5s off,3.717,true,84.150,true,150.000,0.000,0,81,0,223,2.330,36,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,12,3,1s on / .5s off,3.717,true,84.150,true,150.000,0.000,0,81,80,223,2.330,36,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,10,hold,20.000,true,145.350,false,0.000,0.000,0,0,0,1200,2.296,768,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,10,hold,1.733,true,22.950,true,150.000,0.000,0,0,0,104,2.269,69,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,dagger,5,10,hold,2.750,true,22.950,true,150.000,0.000,0,76,0,165,2.287,109,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,5,10,hold,2.750,true,22.950,true,150.000,0.000,0,76,75,165,2.287,109,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,dagger,12,10,hold,2.750,true,84.150,true,150.000,0.000,0,76,0,165,2.214,78,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,12,10,hold,2.750,true,84.150,true,150.000,0.000,0,76,75,165,2.214,78,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,10,hold,6.333,false,262.500,false,130.107,0.000,0,0,0,380,2.278,257,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,10,hold,1.867,true,22.950,true,150.000,0.000,0,0,0,112,2.213,76,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,dagger,5,10,hold,2.750,true,91.800,true,150.000,0.000,0,76,0,165,2.280,114,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,5,10,hold,2.750,true,91.800,true,150.000,0.000,0,76,75,165,2.280,114,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,dagger,12,10,hold,2.750,true,114.750,true,150.000,0.000,0,76,0,165,2.275,74,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,12,10,hold,2.750,true,114.750,true,150.000,0.000,0,76,75,165,2.275,74,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,10,1s on / .5s off,20.000,true,145.350,false,0.000,0.000,0,0,0,1200,2.296,768,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,10,1s on / .5s off,2.217,true,22.950,true,150.000,0.000,0,0,0,133,2.275,86,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,dagger,5,10,1s on / .5s off,3.717,true,30.600,true,150.000,0.000,0,81,0,223,2.264,146,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,5,10,1s on / .5s off,3.717,true,30.600,true,150.000,0.000,0,81,80,223,2.264,146,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,dagger,12,10,1s on / .5s off,3.717,true,107.100,true,150.000,0.000,0,81,0,223,2.193,104,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,dagger,12,10,1s on / .5s off,3.717,true,107.100,true,150.000,0.000,0,81,80,223,2.193,104,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,dagger,5,10,1s on / .5s off,6.333,false,262.500,false,130.107,0.000,0,0,0,380,2.278,257,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,dagger,5,10,1s on / .5s off,2.500,true,68.850,true,150.000,0.000,0,0,0,150,2.237,103,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,dagger,5,10,1s on / .5s off,3.717,true,130.050,true,150.000,0.000,0,81,0,223,2.325,147,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,5,10,1s on / .5s off,3.717,true,130.050,true,150.000,0.000,0,81,80,223,2.325,147,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,dagger,12,10,1s on / .5s off,3.717,true,183.600,true,150.000,0.000,0,81,0,223,2.330,98,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,dagger,12,10,1s on / .5s off,3.717,true,183.600,true,150.000,0.000,0,81,80,223,2.330,98,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,3,hold,0.883,false,150.000,false,0.000,0.000,0,0,0,53,2.152,13,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,3,hold,0.883,false,150.000,false,6.375,0.000,0,0,0,53,2.152,13,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,mace,5,3,hold,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,13,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,5,3,hold,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,13,4.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,mace,12,3,hold,10.000,true,108.000,true,550.000,0.000,0,511,0,600,2.289,67,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,12,3,hold,10.000,true,108.000,true,550.000,0.000,0,511,510,600,2.289,67,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,3,hold,1.233,false,150.000,false,1.700,0.000,0,0,0,74,2.224,19,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,3,hold,1.233,false,150.000,false,9.350,0.000,0,0,0,74,2.224,19,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,mace,5,3,hold,1.233,false,150.000,false,2.341,0.000,0,0,0,74,2.224,19,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,5,3,hold,1.233,false,150.000,false,2.341,0.000,0,0,0,74,2.224,19,4.0,0.900,current position,weave
+alpha,caustic,0%,neutral,mace,12,3,hold,8.800,false,150.000,false,479.841,0.000,0,439,0,528,2.329,52,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,12,3,hold,8.800,false,150.000,false,479.841,0.000,0,439,438,528,2.329,52,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,0.883,false,150.000,false,0.000,0.000,0,0,0,53,2.152,13,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,0.883,false,150.000,false,6.375,0.000,0,0,0,53,2.152,13,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,mace,5,3,1s on / .5s off,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,13,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,5,3,1s on / .5s off,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,13,4.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,mace,12,3,1s on / .5s off,10.883,true,117.000,true,550.000,0.000,0,511,0,653,2.288,72,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,12,3,1s on / .5s off,10.883,true,117.000,true,550.000,0.000,0,511,510,653,2.288,72,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,1.233,false,150.000,false,1.700,0.000,0,0,0,74,2.224,19,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,1.233,false,150.000,false,8.500,0.000,0,0,0,74,2.224,19,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,mace,5,3,1s on / .5s off,1.233,false,150.000,false,1.801,0.000,0,0,0,74,2.224,19,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,5,3,1s on / .5s off,1.233,false,150.000,false,1.801,0.000,0,0,0,74,2.224,19,4.0,0.900,current position,weave
+alpha,caustic,0%,neutral,mace,12,3,1s on / .5s off,8.800,false,150.000,false,410.801,0.000,0,386,0,528,2.329,52,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,12,3,1s on / .5s off,8.800,false,150.000,false,410.801,0.000,0,386,385,528,2.329,52,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,10,hold,0.883,false,150.000,false,0.000,0.000,0,0,0,53,2.152,35,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,10,hold,0.883,false,150.000,false,6.375,0.000,0,0,0,53,2.152,35,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,mace,5,10,hold,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,35,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,5,10,hold,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,35,4.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,mace,12,10,hold,4.050,false,150.000,false,167.381,0.000,0,154,0,243,2.190,93,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,12,10,hold,4.050,false,150.000,false,167.381,0.000,0,154,153,243,2.190,93,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,10,hold,1.233,false,150.000,false,1.700,0.000,0,0,0,74,2.224,51,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,10,hold,1.233,false,150.000,false,9.350,0.000,0,0,0,74,2.224,51,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,mace,5,10,hold,1.233,false,150.000,false,2.341,0.000,0,0,0,74,2.224,51,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,5,10,hold,1.233,false,150.000,false,2.341,0.000,0,0,0,74,2.224,51,4.0,0.900,current position,weave
+alpha,caustic,0%,neutral,mace,12,10,hold,2.900,false,150.000,false,85.221,0.000,0,85,0,174,2.312,63,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,12,10,hold,2.900,false,150.000,false,85.221,0.000,0,85,84,174,2.312,63,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,0.883,false,150.000,false,0.000,0.000,0,0,0,53,2.152,35,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,0.883,false,150.000,false,6.375,0.000,0,0,0,53,2.152,35,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,mace,5,10,1s on / .5s off,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,35,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,5,10,1s on / .5s off,0.883,false,150.000,false,1.620,0.000,0,0,0,53,2.152,35,4.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,mace,12,10,1s on / .5s off,4.050,false,150.000,false,101.401,0.000,0,101,0,243,2.190,93,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,mace,12,10,1s on / .5s off,4.050,false,150.000,false,101.401,0.000,0,101,100,243,2.190,93,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.233,false,150.000,false,1.700,0.000,0,0,0,74,2.224,51,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.233,false,150.000,false,8.500,0.000,0,0,0,74,2.224,51,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,mace,5,10,1s on / .5s off,1.233,false,150.000,false,1.801,0.000,0,0,0,74,2.224,51,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,5,10,1s on / .5s off,1.233,false,150.000,false,1.801,0.000,0,0,0,74,2.224,51,4.0,0.900,current position,weave
+alpha,caustic,0%,neutral,mace,12,10,1s on / .5s off,2.900,false,150.000,false,35.601,0.000,0,32,0,174,2.312,63,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,mace,12,10,1s on / .5s off,2.900,false,150.000,false,35.601,0.000,0,32,31,174,2.312,63,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,3,hold,1.650,false,262.500,false,0.000,0.000,0,0,0,99,2.266,24,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,3,hold,1.650,false,262.500,false,12.750,0.000,0,0,0,99,2.266,24,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,mace,5,3,hold,1.650,false,262.500,false,3.061,0.000,0,10,0,99,2.266,24,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,5,3,hold,1.650,false,262.500,false,3.061,0.000,0,10,9,99,2.266,24,4.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,mace,12,3,hold,10.000,true,91.800,true,550.000,0.000,0,511,0,600,2.289,67,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,12,3,hold,10.000,true,91.800,true,550.000,0.000,0,511,510,600,2.289,67,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,3,hold,2.717,false,262.499,false,3.400,0.000,0,0,0,163,2.271,38,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,3,hold,2.717,false,262.499,false,17.849,0.000,0,0,0,163,2.271,38,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,mace,5,3,hold,2.717,false,262.499,false,69.041,0.000,0,74,0,163,2.271,38,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,5,3,hold,2.717,false,262.499,false,69.041,0.000,0,74,73,163,2.271,38,4.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,mace,12,3,hold,10.000,true,145.350,true,550.000,0.000,0,511,0,600,2.324,58,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,12,3,hold,10.000,true,145.350,true,550.000,0.000,0,511,510,600,2.324,58,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,1.650,false,262.500,false,0.000,0.000,0,0,0,99,2.266,24,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,1.650,false,262.500,false,8.500,0.000,0,0,0,99,2.266,24,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,mace,5,3,1s on / .5s off,1.650,false,262.500,false,2.161,0.000,0,0,0,99,2.266,24,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,5,3,1s on / .5s off,1.650,false,262.500,false,2.161,0.000,0,0,0,99,2.266,24,4.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,mace,12,3,1s on / .5s off,10.883,true,99.450,true,550.000,0.000,0,511,0,653,2.288,72,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,12,3,1s on / .5s off,10.883,true,99.450,true,550.000,0.000,0,511,510,653,2.288,72,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,2.717,false,262.499,false,3.400,0.000,0,0,0,163,2.271,38,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,2.717,false,262.499,false,14.450,0.000,0,0,0,163,2.271,38,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,mace,5,3,1s on / .5s off,2.717,false,262.499,false,19.601,0.000,0,21,0,163,2.271,38,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,5,3,1s on / .5s off,2.717,false,262.499,false,19.601,0.000,0,21,20,163,2.271,38,4.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,mace,12,3,1s on / .5s off,10.883,true,175.950,true,550.000,0.000,0,511,0,653,2.327,62,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,12,3,1s on / .5s off,10.883,true,175.950,true,550.000,0.000,0,511,510,653,2.327,62,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,10,hold,1.650,false,262.500,false,0.000,0.000,0,0,0,99,2.266,64,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,10,hold,1.650,false,262.500,false,12.750,0.000,0,0,0,99,2.266,64,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,mace,5,10,hold,1.650,false,262.500,false,3.061,0.000,0,10,0,99,2.266,64,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,5,10,hold,1.650,false,262.500,false,3.061,0.000,0,10,9,99,2.266,64,4.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,mace,12,10,hold,8.783,false,262.500,false,479.841,0.000,0,438,0,527,2.302,195,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,12,10,hold,8.783,false,262.500,false,479.841,0.000,0,438,437,527,2.302,195,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,10,hold,2.533,false,262.499,false,2.550,0.000,0,0,0,152,2.233,100,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,10,hold,2.533,false,262.499,false,16.150,0.000,0,0,0,152,2.233,100,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,mace,5,10,hold,2.533,false,262.499,false,68.681,0.000,0,63,0,152,2.233,100,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,5,10,hold,2.533,false,262.499,false,68.681,0.000,0,63,62,152,2.233,100,4.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,mace,12,10,hold,5.600,false,262.500,false,266.081,0.000,0,247,0,336,2.294,122,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,12,10,hold,5.600,false,262.500,false,266.081,0.000,0,247,246,336,2.294,122,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,1.650,false,262.500,false,0.000,0.000,0,0,0,99,2.266,64,4.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,1.650,false,262.500,false,8.500,0.000,0,0,0,99,2.266,64,4.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,mace,5,10,1s on / .5s off,1.650,false,262.500,false,2.161,0.000,0,0,0,99,2.266,64,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,5,10,1s on / .5s off,1.650,false,262.500,false,2.161,0.000,0,0,0,99,2.266,64,4.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,mace,12,10,1s on / .5s off,8.783,false,262.500,false,410.801,0.000,0,385,0,527,2.302,195,4.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,mace,12,10,1s on / .5s off,8.783,false,262.500,false,410.801,0.000,0,385,384,527,2.302,195,4.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.533,false,262.499,false,2.550,0.000,0,0,0,152,2.233,100,4.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.533,false,262.499,false,13.600,0.000,0,0,0,152,2.233,100,4.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,mace,5,10,1s on / .5s off,2.533,false,262.499,false,3.601,0.000,0,10,0,152,2.233,100,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,5,10,1s on / .5s off,2.533,false,262.499,false,3.601,0.000,0,10,9,152,2.233,100,4.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,mace,12,10,1s on / .5s off,5.600,false,262.500,false,199.201,0.000,0,194,0,336,2.294,122,4.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,mace,12,10,1s on / .5s off,5.600,false,262.500,false,199.201,0.000,0,194,193,336,2.294,122,4.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,3,hold,20.000,true,63.000,false,0.000,0.000,0,0,0,1200,2.403,206,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,3,hold,1.600,true,9.000,true,70.000,0.000,0,0,0,96,2.598,17,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,flare,5,3,hold,2.000,true,9.000,true,70.000,0.000,0,31,0,120,2.655,20,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,5,3,hold,2.000,true,9.000,true,70.000,0.000,0,31,30,120,2.655,20,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,flare,12,3,hold,2.000,true,36.000,true,70.000,0.000,0,31,0,120,2.406,12,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,12,3,hold,2.000,true,36.000,true,70.000,0.000,0,31,30,120,2.406,12,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,3,hold,3.283,true,27.000,true,70.000,0.000,0,0,0,197,2.313,37,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,3,hold,1.500,true,0.000,true,70.000,0.000,0,0,0,90,2.460,17,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,flare,5,3,hold,2.000,true,0.000,true,70.000,0.000,0,31,0,120,2.380,22,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,5,3,hold,2.000,true,0.000,true,70.000,0.000,0,31,30,120,2.380,22,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,flare,12,3,hold,2.000,true,27.000,true,70.000,0.000,0,31,0,120,2.467,11,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,12,3,hold,2.000,true,27.000,true,70.000,0.000,0,31,30,120,2.467,11,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,3,1s on / .5s off,20.000,true,63.000,false,0.000,0.000,0,0,0,1200,2.403,206,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,3,1s on / .5s off,1.750,true,9.000,true,70.000,0.000,0,0,0,105,2.633,18,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,flare,5,3,1s on / .5s off,2.883,true,9.000,true,70.000,0.000,0,31,0,173,2.730,29,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,5,3,1s on / .5s off,2.883,true,9.000,true,70.000,0.000,0,31,30,173,2.730,29,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,flare,12,3,1s on / .5s off,2.883,true,36.000,true,70.000,0.000,0,31,0,173,2.391,19,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,12,3,1s on / .5s off,2.883,true,36.000,true,70.000,0.000,0,31,30,173,2.391,19,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,3,1s on / .5s off,3.283,true,27.000,true,70.000,0.000,0,0,0,197,2.313,37,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,3,1s on / .5s off,1.750,true,0.000,true,70.000,0.000,0,0,0,105,2.319,20,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,flare,5,3,1s on / .5s off,2.883,true,18.000,true,70.000,0.000,0,31,0,173,2.371,32,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,5,3,1s on / .5s off,2.883,true,18.000,true,70.000,0.000,0,31,30,173,2.371,32,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,flare,12,3,1s on / .5s off,2.883,true,27.000,true,70.000,0.000,0,31,0,173,2.502,17,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,12,3,1s on / .5s off,2.883,true,27.000,true,70.000,0.000,0,31,30,173,2.502,17,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,10,hold,15.667,false,150.000,false,0.000,0.000,0,0,0,940,2.526,523,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,10,hold,1.600,true,18.000,true,70.000,0.000,0,0,0,96,2.598,52,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,flare,5,10,hold,2.000,true,18.000,true,70.000,0.000,0,31,0,120,2.655,67,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,5,10,hold,2.000,true,18.000,true,70.000,0.000,0,31,30,120,2.655,67,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,flare,12,10,hold,2.000,true,81.000,true,70.000,0.000,0,31,0,120,2.406,47,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,12,10,hold,2.000,true,81.000,true,70.000,0.000,0,31,30,120,2.406,47,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,10,hold,3.283,true,36.000,true,70.000,0.000,0,0,0,197,2.313,114,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,10,hold,1.500,true,9.000,true,70.000,0.000,0,0,0,90,2.460,53,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,flare,5,10,hold,2.000,true,9.000,true,70.000,0.000,0,31,0,120,2.380,68,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,5,10,hold,2.000,true,9.000,true,70.000,0.000,0,31,30,120,2.380,68,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,flare,12,10,hold,2.000,true,54.000,true,70.000,0.000,0,31,0,120,2.467,44,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,12,10,hold,2.000,true,54.000,true,70.000,0.000,0,31,30,120,2.467,44,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,10,1s on / .5s off,15.667,false,150.000,false,0.000,0.000,0,0,0,940,2.526,523,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,10,1s on / .5s off,1.750,true,18.000,true,70.000,0.000,0,0,0,105,2.633,60,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,neutral,flare,5,10,1s on / .5s off,2.883,true,18.000,true,70.000,0.000,0,31,0,173,2.730,94,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,5,10,1s on / .5s off,2.883,true,18.000,true,70.000,0.000,0,31,30,173,2.730,94,0.0,0.900,current position,orbit
+alpha,caustic,0%,neutral,flare,12,10,1s on / .5s off,2.883,true,144.000,true,70.000,0.000,0,31,0,173,2.391,67,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,neutral,flare,12,10,1s on / .5s off,2.883,true,144.000,true,70.000,0.000,0,31,30,173,2.391,67,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,neutral,flare,5,10,1s on / .5s off,3.283,true,36.000,true,70.000,0.000,0,0,0,197,2.313,114,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,neutral,flare,5,10,1s on / .5s off,1.750,true,9.000,true,70.000,0.000,0,0,0,105,2.319,61,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,neutral,flare,5,10,1s on / .5s off,2.883,true,27.000,true,70.000,0.000,0,31,0,173,2.371,100,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,5,10,1s on / .5s off,2.883,true,27.000,true,70.000,0.000,0,31,30,173,2.371,100,0.0,0.900,current position,weave
+alpha,caustic,0%,neutral,flare,12,10,1s on / .5s off,2.883,true,54.000,true,70.000,0.000,0,31,0,173,2.502,64,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,neutral,flare,12,10,1s on / .5s off,2.883,true,54.000,true,70.000,0.000,0,31,30,173,2.502,64,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,3,hold,20.000,true,53.550,false,0.000,0.000,0,0,0,1200,2.403,206,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,3,hold,1.600,true,7.650,true,70.000,0.000,0,0,0,96,2.598,17,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,flare,5,3,hold,2.000,true,7.650,true,70.000,0.000,0,31,0,120,2.655,20,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,5,3,hold,2.000,true,7.650,true,70.000,0.000,0,31,30,120,2.655,20,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,flare,12,3,hold,2.000,true,30.600,true,70.000,0.000,0,31,0,120,2.406,12,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,12,3,hold,2.000,true,30.600,true,70.000,0.000,0,31,30,120,2.406,12,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,3,hold,3.283,true,22.950,true,70.000,0.000,0,0,0,197,2.313,37,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,3,hold,1.500,true,0.000,true,70.000,0.000,0,0,0,90,2.460,17,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,flare,5,3,hold,2.000,true,0.000,true,70.000,0.000,0,31,0,120,2.380,22,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,5,3,hold,2.000,true,0.000,true,70.000,0.000,0,31,30,120,2.380,22,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,flare,12,3,hold,2.000,true,22.950,true,70.000,0.000,0,31,0,120,2.467,11,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,12,3,hold,2.000,true,22.950,true,70.000,0.000,0,31,30,120,2.467,11,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,3,1s on / .5s off,20.000,true,53.550,false,0.000,0.000,0,0,0,1200,2.403,206,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,3,1s on / .5s off,1.750,true,7.650,true,70.000,0.000,0,0,0,105,2.633,18,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,flare,5,3,1s on / .5s off,2.883,true,7.650,true,70.000,0.000,0,31,0,173,2.730,29,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,5,3,1s on / .5s off,2.883,true,7.650,true,70.000,0.000,0,31,30,173,2.730,29,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,flare,12,3,1s on / .5s off,2.883,true,30.600,true,70.000,0.000,0,31,0,173,2.391,19,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,12,3,1s on / .5s off,2.883,true,30.600,true,70.000,0.000,0,31,30,173,2.391,19,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,3,1s on / .5s off,3.283,true,22.950,true,70.000,0.000,0,0,0,197,2.313,37,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,3,1s on / .5s off,1.750,true,0.000,true,70.000,0.000,0,0,0,105,2.319,20,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,flare,5,3,1s on / .5s off,2.883,true,15.300,true,70.000,0.000,0,31,0,173,2.371,32,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,5,3,1s on / .5s off,2.883,true,15.300,true,70.000,0.000,0,31,30,173,2.371,32,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,flare,12,3,1s on / .5s off,2.883,true,22.950,true,70.000,0.000,0,31,0,173,2.502,17,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,12,3,1s on / .5s off,2.883,true,22.950,true,70.000,0.000,0,31,30,173,2.502,17,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,10,hold,20.000,true,168.300,false,0.000,0.000,0,0,0,1200,2.403,683,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,10,hold,1.600,true,15.300,true,70.000,0.000,0,0,0,96,2.598,52,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,flare,5,10,hold,2.000,true,15.300,true,70.000,0.000,0,31,0,120,2.655,67,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,5,10,hold,2.000,true,15.300,true,70.000,0.000,0,31,30,120,2.655,67,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,flare,12,10,hold,2.000,true,68.850,true,70.000,0.000,0,31,0,120,2.406,47,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,12,10,hold,2.000,true,68.850,true,70.000,0.000,0,31,30,120,2.406,47,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,10,hold,3.283,true,30.600,true,70.000,0.000,0,0,0,197,2.313,114,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,10,hold,1.500,true,7.650,true,70.000,0.000,0,0,0,90,2.460,53,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,flare,5,10,hold,2.000,true,7.650,true,70.000,0.000,0,31,0,120,2.380,68,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,5,10,hold,2.000,true,7.650,true,70.000,0.000,0,31,30,120,2.380,68,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,flare,12,10,hold,2.000,true,45.900,true,70.000,0.000,0,31,0,120,2.467,44,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,12,10,hold,2.000,true,45.900,true,70.000,0.000,0,31,30,120,2.467,44,0.0,0.900,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,10,1s on / .5s off,20.000,true,168.300,false,0.000,0.000,0,0,0,1200,2.403,683,0.0,4.250,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,10,1s on / .5s off,1.750,true,15.300,true,70.000,0.000,0,0,0,105,2.633,60,0.0,4.250,motion-compensated,orbit
+alpha,caustic,0%,durability+5,flare,5,10,1s on / .5s off,2.883,true,15.300,true,70.000,0.000,0,31,0,173,2.730,94,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,5,10,1s on / .5s off,2.883,true,15.300,true,70.000,0.000,0,31,30,173,2.730,94,0.0,0.900,current position,orbit
+alpha,caustic,0%,durability+5,flare,12,10,1s on / .5s off,2.883,true,122.400,true,70.000,0.000,0,31,0,173,2.391,67,0.0,0.900,current position,orbit
+alpha,caustic,50% after buildup,durability+5,flare,12,10,1s on / .5s off,2.883,true,122.400,true,70.000,0.000,0,31,30,173,2.391,67,0.0,0.900,current position,orbit
+alpha,flamethrower,n/a,durability+5,flare,5,10,1s on / .5s off,3.283,true,30.600,true,70.000,0.000,0,0,0,197,2.313,114,0.0,4.250,current position,weave
+alpha,flamethrower,n/a,durability+5,flare,5,10,1s on / .5s off,1.750,true,7.650,true,70.000,0.000,0,0,0,105,2.319,61,0.0,4.250,motion-compensated,weave
+alpha,caustic,0%,durability+5,flare,5,10,1s on / .5s off,2.883,true,22.950,true,70.000,0.000,0,31,0,173,2.371,100,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,5,10,1s on / .5s off,2.883,true,22.950,true,70.000,0.000,0,31,30,173,2.371,100,0.0,0.900,current position,weave
+alpha,caustic,0%,durability+5,flare,12,10,1s on / .5s off,2.883,true,45.900,true,70.000,0.000,0,31,0,173,2.502,64,0.0,0.900,current position,weave
+alpha,caustic,50% after buildup,durability+5,flare,12,10,1s on / .5s off,2.883,true,45.900,true,70.000,0.000,0,31,30,173,2.502,64,0.0,0.900,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,3,hold,1.267,false,170.000,false,0.000,0.000,0,0,0,76,2.223,19,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,3,hold,1.267,false,170.000,false,229.900,0.000,0,0,0,76,2.223,19,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,mace,5,3,hold,1.267,false,170.000,false,7.021,0.000,0,0,0,76,2.223,19,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,5,3,hold,1.267,false,170.000,false,7.021,0.000,0,0,0,76,2.223,19,4.0,2.700,current position,orbit
+beta,caustic,0%,neutral,mace,12,3,hold,9.500,true,108.000,true,550.000,0.000,0,481,0,570,2.295,62,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,12,3,hold,8.500,true,90.000,true,550.000,0.000,0,421,420,510,2.301,57,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,3,hold,2.017,false,170.000,false,41.800,0.000,0,0,0,121,2.338,26,4.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,3,hold,2.017,false,170.000,false,334.400,0.000,0,0,0,121,2.338,26,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,mace,5,3,hold,2.017,false,170.000,false,43.341,0.000,0,32,0,121,2.338,26,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,5,3,hold,2.017,false,170.000,false,48.501,0.000,0,32,31,121,2.338,26,4.0,2.700,current position,weave
+beta,caustic,0%,neutral,mace,12,3,hold,9.500,true,162.000,true,550.000,0.000,0,481,0,570,2.511,55,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,12,3,hold,8.500,true,117.000,true,550.000,0.000,0,421,420,510,2.485,50,4.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,1.267,false,170.000,false,0.000,0.000,0,0,0,76,2.223,19,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,1.267,false,170.000,false,209.000,0.000,0,0,0,76,2.223,19,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,mace,5,3,1s on / .5s off,1.267,false,170.000,false,5.400,0.000,0,0,0,76,2.223,19,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,5,3,1s on / .5s off,1.267,false,170.000,false,5.400,0.000,0,0,0,76,2.223,19,4.0,2.700,current position,orbit
+beta,caustic,0%,neutral,mace,12,3,1s on / .5s off,10.517,true,117.000,true,550.000,0.000,0,489,0,631,2.288,69,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,12,3,1s on / .5s off,9.883,true,108.000,true,550.000,0.000,0,451,450,593,2.290,65,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,2.017,false,170.000,false,41.800,0.000,0,0,0,121,2.338,26,4.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,3,1s on / .5s off,2.017,false,170.000,false,271.700,0.000,0,0,0,121,2.338,26,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,mace,5,3,1s on / .5s off,2.017,false,170.000,false,8.641,0.000,0,0,0,121,2.338,26,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,5,3,1s on / .5s off,2.017,false,170.000,false,8.641,0.000,0,0,0,121,2.338,26,4.0,2.700,current position,weave
+beta,caustic,0%,neutral,mace,12,3,1s on / .5s off,10.067,false,170.000,false,517.800,0.000,0,462,0,604,2.501,58,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,12,3,1s on / .5s off,9.883,true,162.000,true,550.000,0.000,0,451,450,593,2.516,57,4.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,10,hold,1.267,false,170.000,false,0.000,0.000,0,0,0,76,2.223,51,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,10,hold,1.267,false,170.000,false,229.900,0.000,0,0,0,76,2.223,51,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,mace,5,10,hold,1.267,false,170.000,false,7.021,0.000,0,0,0,76,2.223,51,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,5,10,hold,1.267,false,170.000,false,7.021,0.000,0,0,0,76,2.223,51,4.0,2.700,current position,orbit
+beta,caustic,0%,neutral,mace,12,10,hold,4.583,false,170.000,false,216.840,0.000,0,186,0,275,2.202,105,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,12,10,hold,4.583,false,170.000,false,243.501,0.000,0,186,185,275,2.202,105,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,10,hold,1.250,false,170.000,false,20.900,0.000,0,0,0,75,2.321,51,4.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,10,hold,1.250,false,170.000,false,229.900,0.000,0,0,0,75,2.321,51,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,mace,5,10,hold,1.250,false,170.000,false,7.021,0.000,0,0,0,75,2.321,51,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,5,10,hold,1.250,false,170.000,false,7.021,0.000,0,0,0,75,2.321,51,4.0,2.700,current position,weave
+beta,caustic,0%,neutral,mace,12,10,hold,3.483,false,170.000,false,130.900,0.000,0,120,0,209,2.415,75,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,12,10,hold,3.483,false,170.000,false,148.101,0.000,0,120,119,209,2.415,75,4.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.267,false,170.000,false,0.000,0.000,0,0,0,76,2.223,51,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.267,false,170.000,false,209.000,0.000,0,0,0,76,2.223,51,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,mace,5,10,1s on / .5s off,1.267,false,170.000,false,5.400,0.000,0,0,0,76,2.223,51,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,5,10,1s on / .5s off,1.267,false,170.000,false,5.400,0.000,0,0,0,76,2.223,51,4.0,2.700,current position,orbit
+beta,caustic,0%,neutral,mace,12,10,1s on / .5s off,4.583,false,170.000,false,144.741,0.000,0,133,0,275,2.202,105,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,mace,12,10,1s on / .5s off,4.583,false,170.000,false,155.061,0.000,0,133,132,275,2.202,105,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.250,false,170.000,false,20.900,0.000,0,0,0,75,2.321,51,4.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,mace,5,10,1s on / .5s off,1.250,false,170.000,false,209.000,0.000,0,0,0,75,2.321,51,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,mace,5,10,1s on / .5s off,1.250,false,170.000,false,5.400,0.000,0,0,0,75,2.321,51,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,5,10,1s on / .5s off,1.250,false,170.000,false,5.400,0.000,0,0,0,75,2.321,51,4.0,2.700,current position,weave
+beta,caustic,0%,neutral,mace,12,10,1s on / .5s off,3.483,false,170.000,false,77.501,0.000,0,67,0,209,2.415,75,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,mace,12,10,1s on / .5s off,3.483,false,170.000,false,82.661,0.000,0,67,66,209,2.415,75,4.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,3,hold,2.017,false,297.500,false,0.000,0.000,0,0,0,121,2.273,28,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,3,hold,2.017,false,297.500,false,397.100,0.000,0,0,0,121,2.273,28,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,mace,5,3,hold,2.017,false,297.500,false,43.341,0.000,0,32,0,121,2.273,28,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,5,3,hold,2.017,false,297.500,false,48.501,0.000,0,32,31,121,2.273,28,4.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,mace,12,3,hold,9.500,true,91.800,true,550.000,0.000,0,481,0,570,2.295,62,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,12,3,hold,8.500,true,76.500,true,550.000,0.000,0,421,420,510,2.301,57,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,3,hold,3.517,false,297.499,false,104.500,0.000,0,0,0,211,2.379,46,4.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,3,hold,3.517,false,297.499,false,512.050,0.000,0,0,0,211,2.379,46,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,mace,5,3,hold,3.517,false,297.499,false,147.440,0.000,0,122,0,211,2.379,46,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,5,3,hold,3.517,false,297.499,false,165.501,0.000,0,122,121,211,2.379,46,4.0,2.700,current position,weave
+beta,caustic,0%,durability+5,mace,12,3,hold,9.500,true,137.700,true,550.000,0.000,0,481,0,570,2.511,55,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,12,3,hold,8.500,true,99.450,true,550.000,0.000,0,421,420,510,2.485,50,4.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,2.017,false,297.500,false,0.000,0.000,0,0,0,121,2.273,28,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,2.017,false,297.500,false,292.600,0.000,0,0,0,121,2.273,28,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,mace,5,3,1s on / .5s off,2.017,false,297.500,false,8.641,0.000,0,0,0,121,2.273,28,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,5,3,1s on / .5s off,2.017,false,297.500,false,8.641,0.000,0,0,0,121,2.273,28,4.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,mace,12,3,1s on / .5s off,10.517,true,99.450,true,550.000,0.000,0,489,0,631,2.288,69,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,12,3,1s on / .5s off,9.883,true,91.800,true,550.000,0.000,0,451,450,593,2.290,65,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,3.517,false,297.499,false,83.600,0.000,0,0,0,211,2.379,46,4.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,3,1s on / .5s off,3.517,false,297.499,false,376.200,0.000,0,0,0,211,2.379,46,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,mace,5,3,1s on / .5s off,3.517,false,297.499,false,78.041,0.000,0,69,0,211,2.379,46,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,5,3,1s on / .5s off,3.517,false,297.499,false,84.061,0.000,0,69,68,211,2.379,46,4.0,2.700,current position,weave
+beta,caustic,0%,durability+5,mace,12,3,1s on / .5s off,10.517,true,160.650,true,550.000,0.000,0,489,0,631,2.534,60,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,12,3,1s on / .5s off,9.883,true,137.700,true,550.000,0.000,0,451,450,593,2.516,57,4.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,10,hold,2.017,false,297.500,false,0.000,0.000,0,0,0,121,2.273,75,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,10,hold,2.017,false,297.500,false,397.100,0.000,0,0,0,121,2.273,75,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,mace,5,10,hold,2.017,false,297.500,false,43.341,0.000,0,32,0,121,2.273,75,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,5,10,hold,2.017,false,297.500,false,48.501,0.000,0,32,31,121,2.273,75,4.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,mace,12,10,hold,9.383,false,297.500,false,546.760,0.000,0,474,0,563,2.297,209,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,12,10,hold,8.500,true,260.100,true,550.000,0.000,0,421,420,510,2.301,189,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,10,hold,2.733,false,297.500,false,83.600,0.000,0,0,0,164,2.382,109,4.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,10,hold,2.733,false,297.500,false,397.100,0.000,0,0,0,164,2.382,109,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,mace,5,10,hold,2.733,false,297.500,false,79.121,0.000,0,75,0,164,2.382,109,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,5,10,hold,2.733,false,297.500,false,90.301,0.000,0,75,74,164,2.382,109,4.0,2.700,current position,weave
+beta,caustic,0%,durability+5,mace,12,10,hold,7.500,false,297.500,false,424.500,0.000,0,361,0,450,2.515,173,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,12,10,hold,7.500,false,297.500,false,476.101,0.000,0,361,360,450,2.515,173,4.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.017,false,297.500,false,0.000,0.000,0,0,0,121,2.273,75,4.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.017,false,297.500,false,292.600,0.000,0,0,0,121,2.273,75,4.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,mace,5,10,1s on / .5s off,2.017,false,297.500,false,8.641,0.000,0,0,0,121,2.273,75,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,5,10,1s on / .5s off,2.017,false,297.500,false,8.641,0.000,0,0,0,121,2.273,75,4.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,mace,12,10,1s on / .5s off,9.383,false,297.500,false,482.560,0.000,0,421,0,563,2.297,209,4.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,mace,12,10,1s on / .5s off,9.383,false,297.500,false,521.261,0.000,0,421,420,563,2.297,209,4.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.733,false,297.500,false,62.700,0.000,0,0,0,164,2.382,109,4.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,mace,5,10,1s on / .5s off,2.733,false,297.500,false,313.500,0.000,0,0,0,164,2.382,109,4.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,mace,5,10,1s on / .5s off,2.733,false,297.500,false,26.801,0.000,0,22,0,164,2.382,109,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,5,10,1s on / .5s off,2.733,false,297.500,false,27.661,0.000,0,22,21,164,2.382,109,4.0,2.700,current position,weave
+beta,caustic,0%,durability+5,mace,12,10,1s on / .5s off,7.500,false,297.500,false,347.000,0.000,0,308,0,450,2.515,173,4.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,mace,12,10,1s on / .5s off,7.500,false,297.500,false,373.661,0.000,0,308,307,450,2.515,173,4.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,3,hold,20.000,true,36.000,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,3,hold,7.700,true,27.000,true,900.000,0.000,0,0,0,462,2.292,80,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,fortress,5,3,hold,19.750,true,36.000,true,900.000,0.000,0,1096,0,1185,2.301,203,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,5,3,hold,19.750,true,36.000,true,900.000,0.000,0,1096,1095,1185,2.301,203,9.0,2.700,current position,orbit
+beta,caustic,0%,neutral,fortress,12,3,hold,15.067,false,170.000,false,675.543,0.000,0,815,0,904,2.301,100,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,12,3,hold,15.067,false,170.000,false,675.543,0.000,0,815,814,904,2.301,100,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,3,hold,16.967,false,170.000,false,471.130,0.000,0,0,0,1018,2.433,183,9.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,3,hold,11.600,true,108.000,true,900.000,0.000,0,0,0,696,2.427,126,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,fortress,5,3,hold,16.967,false,170.000,false,762.803,0.000,0,929,0,1018,2.433,183,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,5,3,hold,16.967,false,170.000,false,762.803,0.000,0,929,928,1018,2.433,183,9.0,2.700,current position,weave
+beta,caustic,0%,neutral,fortress,12,3,hold,10.100,false,170.000,false,428.543,0.000,0,517,0,606,2.502,60,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,12,3,hold,10.100,false,170.000,false,428.543,0.000,0,517,516,606,2.502,60,9.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,20.000,true,36.000,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,10.900,true,36.000,true,900.000,0.000,0,0,0,654,2.301,112,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,fortress,5,3,1s on / .5s off,20.000,true,36.000,false,842.902,0.000,0,1058,0,1200,2.302,205,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,5,3,1s on / .5s off,20.000,true,36.000,false,842.902,0.000,0,1058,1058,1200,2.302,205,9.0,2.700,current position,orbit
+beta,caustic,0%,neutral,fortress,12,3,1s on / .5s off,15.067,false,170.000,false,604.542,0.000,0,762,0,904,2.301,100,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,12,3,1s on / .5s off,15.067,false,170.000,false,604.542,0.000,0,762,761,904,2.301,100,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,16.967,false,170.000,false,487.480,0.000,0,0,0,1018,2.433,183,9.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,16.033,true,162.000,true,900.000,0.000,0,0,0,962,2.429,172,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,fortress,5,3,1s on / .5s off,16.967,false,170.000,false,700.102,0.000,0,876,0,1018,2.433,183,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,5,3,1s on / .5s off,16.967,false,170.000,false,700.102,0.000,0,876,875,1018,2.433,183,9.0,2.700,current position,weave
+beta,caustic,0%,neutral,fortress,12,3,1s on / .5s off,10.100,false,170.000,false,367.803,0.000,0,464,0,606,2.502,60,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,12,3,1s on / .5s off,10.100,false,170.000,false,367.803,0.000,0,464,463,606,2.502,60,9.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,10,hold,20.000,true,153.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,10,hold,7.700,true,72.000,true,900.000,0.000,0,0,0,462,2.292,264,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,fortress,5,10,hold,19.750,true,144.000,true,900.000,0.000,0,1096,0,1185,2.301,667,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,5,10,hold,19.750,true,144.000,true,900.000,0.000,0,1096,1095,1185,2.301,667,9.0,2.700,current position,orbit
+beta,caustic,0%,neutral,fortress,12,10,hold,4.883,false,170.000,false,169.462,0.000,0,204,0,293,2.236,111,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,12,10,hold,4.883,false,170.000,false,169.462,0.000,0,204,203,293,2.236,111,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,10,hold,4.900,false,170.000,false,137.677,0.000,0,0,0,294,2.378,170,9.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,10,hold,4.900,false,170.000,false,406.960,0.000,0,0,0,294,2.378,170,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,fortress,5,10,hold,4.900,false,170.000,false,169.462,0.000,0,205,0,294,2.378,170,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,5,10,hold,4.900,false,170.000,false,169.462,0.000,0,205,204,294,2.378,170,9.0,2.700,current position,weave
+beta,caustic,0%,neutral,fortress,12,10,hold,3.283,false,170.000,false,94.821,0.000,0,108,0,197,2.357,70,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,12,10,hold,3.283,false,170.000,false,94.821,0.000,0,108,107,197,2.357,70,9.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,20.000,true,153.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,10.900,true,99.000,true,900.000,0.000,0,0,0,654,2.301,368,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,fortress,5,10,1s on / .5s off,20.000,true,153.000,false,842.902,0.000,0,1058,0,1200,2.302,675,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,5,10,1s on / .5s off,20.000,true,153.000,false,842.902,0.000,0,1058,1058,1200,2.302,675,9.0,2.700,current position,orbit
+beta,caustic,0%,neutral,fortress,12,10,1s on / .5s off,4.883,false,170.000,false,128.361,0.000,0,151,0,293,2.236,111,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,fortress,12,10,1s on / .5s off,4.883,false,170.000,false,128.361,0.000,0,151,150,293,2.236,111,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,4.900,false,170.000,false,132.227,0.000,0,0,0,294,2.378,170,9.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,4.900,false,170.000,false,314.309,0.000,0,0,0,294,2.378,170,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,fortress,5,10,1s on / .5s off,4.900,false,170.000,false,128.361,0.000,0,152,0,294,2.378,170,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,5,10,1s on / .5s off,4.900,false,170.000,false,128.361,0.000,0,152,151,294,2.378,170,9.0,2.700,current position,weave
+beta,caustic,0%,neutral,fortress,12,10,1s on / .5s off,3.283,false,170.000,false,45.421,0.000,0,55,0,197,2.357,70,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,fortress,12,10,1s on / .5s off,3.283,false,170.000,false,45.421,0.000,0,55,54,197,2.357,70,9.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,3,hold,20.000,true,30.600,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,3,hold,7.700,true,22.950,true,900.000,0.000,0,0,0,462,2.292,80,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,fortress,5,3,hold,19.750,true,30.600,true,900.000,0.000,0,1096,0,1185,2.301,203,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,5,3,hold,19.750,true,30.600,true,900.000,0.000,0,1096,1095,1185,2.301,203,9.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,fortress,12,3,hold,19.750,true,183.600,true,900.000,0.000,0,1096,0,1185,2.284,131,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,12,3,hold,19.750,true,183.600,true,900.000,0.000,0,1096,1095,1185,2.284,131,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,3,hold,20.000,true,175.950,false,566.923,0.000,0,0,0,1200,2.442,216,9.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,3,hold,11.600,true,91.800,true,900.000,0.000,0,0,0,696,2.427,126,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,fortress,5,3,hold,19.750,true,160.650,true,900.000,0.000,0,1096,0,1185,2.433,213,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,5,3,hold,19.750,true,160.650,true,900.000,0.000,0,1096,1095,1185,2.433,213,9.0,2.700,current position,weave
+beta,caustic,0%,durability+5,fortress,12,3,hold,19.133,false,297.500,false,873.683,0.000,0,1059,0,1148,2.534,114,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,12,3,hold,19.133,false,297.500,false,873.683,0.000,0,1059,1058,1148,2.534,114,9.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,20.000,true,30.600,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,10.900,true,30.600,true,900.000,0.000,0,0,0,654,2.301,112,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,fortress,5,3,1s on / .5s off,20.000,true,30.600,false,842.902,0.000,0,1058,0,1200,2.302,205,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,5,3,1s on / .5s off,20.000,true,30.600,false,842.902,0.000,0,1058,1058,1200,2.302,205,9.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,fortress,12,3,1s on / .5s off,20.000,true,183.600,false,842.902,0.000,0,1058,0,1200,2.285,134,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,12,3,1s on / .5s off,20.000,true,183.600,false,842.902,0.000,0,1058,1058,1200,2.285,134,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,20.000,true,175.950,false,583.273,0.000,0,0,0,1200,2.442,216,9.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,16.033,true,137.700,true,900.000,0.000,0,0,0,962,2.429,172,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,fortress,5,3,1s on / .5s off,20.000,true,175.950,false,842.902,0.000,0,1058,0,1200,2.442,216,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,5,3,1s on / .5s off,20.000,true,175.950,false,842.902,0.000,0,1058,1058,1200,2.442,216,9.0,2.700,current position,weave
+beta,caustic,0%,durability+5,fortress,12,3,1s on / .5s off,19.133,false,297.500,false,807.202,0.000,0,1006,0,1148,2.534,114,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,12,3,1s on / .5s off,19.133,false,297.500,false,807.202,0.000,0,1006,1005,1148,2.534,114,9.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,10,hold,20.000,true,130.050,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,10,hold,7.700,true,61.200,true,900.000,0.000,0,0,0,462,2.292,264,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,fortress,5,10,hold,19.750,true,122.400,true,900.000,0.000,0,1096,0,1185,2.301,667,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,5,10,hold,19.750,true,122.400,true,900.000,0.000,0,1096,1095,1185,2.301,667,9.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,fortress,12,10,hold,9.783,false,297.500,false,415.924,0.000,0,498,0,587,2.285,219,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,12,10,hold,9.783,false,297.500,false,415.924,0.000,0,498,497,587,2.285,219,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,10,hold,10.100,false,297.500,false,282.429,0.000,0,0,0,606,2.421,361,9.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,10,hold,10.100,false,297.500,false,780.613,0.000,0,0,0,606,2.421,361,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,fortress,5,10,hold,10.100,false,297.500,false,428.543,0.000,0,517,0,606,2.421,361,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,5,10,hold,10.100,false,297.500,false,428.543,0.000,0,517,516,606,2.421,361,9.0,2.700,current position,weave
+beta,caustic,0%,durability+5,fortress,12,10,hold,6.400,false,297.500,false,243.563,0.000,0,295,0,384,2.467,141,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,12,10,hold,6.400,false,297.500,false,243.563,0.000,0,295,294,384,2.467,141,9.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,20.000,true,130.050,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,10.900,true,84.150,true,900.000,0.000,0,0,0,654,2.301,368,9.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,fortress,5,10,1s on / .5s off,20.000,true,130.050,false,842.902,0.000,0,1058,0,1200,2.302,675,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,5,10,1s on / .5s off,20.000,true,130.050,false,842.902,0.000,0,1058,1058,1200,2.302,675,9.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,fortress,12,10,1s on / .5s off,9.783,false,297.500,false,355.723,0.000,0,445,0,587,2.285,219,9.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,fortress,12,10,1s on / .5s off,9.783,false,297.500,false,355.723,0.000,0,445,444,587,2.285,219,9.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,10.100,false,297.500,false,287.879,0.000,0,0,0,606,2.421,361,9.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,10.100,false,297.500,false,589.861,0.000,0,0,0,606,2.421,361,9.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,fortress,5,10,1s on / .5s off,10.100,false,297.500,false,367.803,0.000,0,464,0,606,2.421,361,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,5,10,1s on / .5s off,10.100,false,297.500,false,367.803,0.000,0,464,463,606,2.421,361,9.0,2.700,current position,weave
+beta,caustic,0%,durability+5,fortress,12,10,1s on / .5s off,6.400,false,297.500,false,199.762,0.000,0,242,0,384,2.467,141,9.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,fortress,12,10,1s on / .5s off,6.400,false,297.500,false,199.762,0.000,0,242,241,384,2.467,141,9.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,3,hold,3.600,false,170.000,false,44.351,0.000,0,0,0,216,2.044,52,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,3,hold,3.583,false,170.000,false,696.069,0.000,0,0,0,215,2.043,52,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,zenith,5,3,hold,2.933,false,170.000,false,91.201,0.000,0,87,0,176,2.021,43,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,5,3,hold,3.583,false,170.000,false,139.441,0.000,0,126,125,215,2.043,52,5.0,2.700,current position,orbit
+beta,caustic,0%,neutral,zenith,12,3,hold,3.950,false,170.000,false,156.602,0.000,0,148,0,237,2.416,38,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,12,3,hold,3.917,false,170.000,false,156.602,0.000,0,146,145,235,2.420,37,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,3,hold,3.333,false,170.000,false,173.980,0.000,0,0,0,200,2.294,46,5.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,3,hold,4.283,true,105.983,true,700.000,0.000,0,0,0,257,2.388,58,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,zenith,5,3,hold,3.333,false,170.000,false,123.361,0.000,0,111,0,200,2.294,46,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,5,3,hold,4.217,false,170.000,false,173.222,0.000,0,164,163,253,2.374,58,5.0,2.700,current position,weave
+beta,caustic,0%,neutral,zenith,12,3,hold,5.317,false,170.000,false,254.161,0.000,0,230,0,319,2.440,47,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,12,3,hold,4.717,false,170.000,false,205.922,0.000,0,194,193,283,2.420,41,5.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,3,1s on / .5s off,3.600,false,170.000,false,44.351,0.000,0,0,0,216,2.044,52,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,3,1s on / .5s off,4.283,false,170.000,false,608.582,0.000,0,0,0,257,2.151,61,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,zenith,5,3,1s on / .5s off,3.600,false,170.000,false,74.041,0.000,0,74,0,216,2.044,52,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,5,3,1s on / .5s off,3.617,false,170.000,false,74.581,0.000,0,75,74,217,2.045,52,5.0,2.700,current position,orbit
+beta,caustic,0%,neutral,zenith,12,3,1s on / .5s off,3.917,false,170.000,false,106.201,0.000,0,93,0,235,2.420,37,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,12,3,1s on / .5s off,5.267,false,170.000,false,185.521,0.000,0,174,173,316,2.319,50,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,3,1s on / .5s off,4.217,false,170.000,false,201.730,0.000,0,0,0,253,2.374,58,5.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,3,1s on / .5s off,6.283,true,159.455,true,700.000,0.000,0,0,0,377,2.324,88,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,zenith,5,3,1s on / .5s off,6.983,false,170.000,false,297.001,0.000,0,277,0,419,2.359,96,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,5,3,1s on / .5s off,6.983,false,170.000,false,297.001,0.000,0,277,276,419,2.359,96,5.0,2.700,current position,weave
+beta,caustic,0%,neutral,zenith,12,3,1s on / .5s off,4.733,false,170.000,false,152.821,0.000,0,142,0,284,2.420,44,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,12,3,1s on / .5s off,5.317,false,170.000,false,186.062,0.000,0,177,176,319,2.440,47,5.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,10,hold,2.900,false,170.000,false,37.338,0.000,0,0,0,174,2.016,121,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,10,hold,2.900,false,170.000,false,556.922,0.000,0,0,0,174,2.016,121,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,zenith,5,10,hold,2.933,false,170.000,false,91.201,0.000,0,87,0,176,2.021,121,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,5,10,hold,2.250,false,170.000,false,57.421,0.000,0,46,45,135,2.015,93,5.0,2.700,current position,orbit
+beta,caustic,0%,neutral,zenith,12,10,hold,3.850,false,170.000,false,156.062,0.000,0,142,0,231,2.429,97,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,12,10,hold,2.983,false,170.000,false,91.201,0.000,0,90,89,179,2.587,77,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,10,hold,1.867,false,170.000,false,121.484,0.000,0,0,0,112,2.074,80,5.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,10,hold,2.933,false,170.000,false,472.205,0.000,0,0,0,176,2.340,121,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,zenith,5,10,hold,2.933,false,170.000,false,91.201,0.000,0,87,0,176,2.340,121,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,5,10,hold,2.917,false,170.000,false,91.201,0.000,0,86,85,175,2.335,118,5.0,2.700,current position,weave
+beta,caustic,0%,neutral,zenith,12,10,hold,3.250,false,170.000,false,122.821,0.000,0,106,0,195,2.364,83,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,12,10,hold,3.250,false,170.000,false,122.821,0.000,0,106,105,195,2.364,83,5.0,2.700,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,10,1s on / .5s off,3.617,false,170.000,false,44.518,0.000,0,0,0,217,2.045,144,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,10,1s on / .5s off,3.600,false,170.000,false,507.235,0.000,0,0,0,216,2.044,144,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,neutral,zenith,5,10,1s on / .5s off,2.933,false,170.000,false,40.801,0.000,0,34,0,176,2.021,121,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,5,10,1s on / .5s off,2.917,false,170.000,false,40.801,0.000,0,33,32,175,2.019,121,5.0,2.700,current position,orbit
+beta,caustic,0%,neutral,zenith,12,10,1s on / .5s off,3.133,false,170.000,false,56.881,0.000,0,46,0,188,2.577,78,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,neutral,zenith,12,10,1s on / .5s off,2.567,false,170.000,false,10.801,0.000,0,12,11,154,2.560,64,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,neutral,zenith,5,10,1s on / .5s off,2.483,false,170.000,false,118.213,0.000,0,0,0,149,2.175,102,5.0,14.450,current position,weave
+beta,flamethrower,n/a,neutral,zenith,5,10,1s on / .5s off,1.867,false,170.000,false,253.617,0.000,0,0,0,112,2.075,80,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,neutral,zenith,5,10,1s on / .5s off,1.867,false,170.000,false,7.561,0.000,0,0,0,112,2.075,80,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,5,10,1s on / .5s off,1.867,false,170.000,false,7.561,0.000,0,0,0,112,2.074,80,5.0,2.700,current position,weave
+beta,caustic,0%,neutral,zenith,12,10,1s on / .5s off,3.267,false,170.000,false,57.421,0.000,0,54,0,196,2.362,84,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,neutral,zenith,12,10,1s on / .5s off,3.250,false,170.000,false,57.421,0.000,0,53,52,195,2.364,83,5.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,3,hold,9.033,false,297.500,false,49.361,0.000,0,0,0,542,2.258,123,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,3,hold,3.683,true,179.826,true,700.000,0.000,0,0,0,221,2.053,53,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,zenith,5,3,hold,7.633,false,297.500,false,401.581,0.000,0,369,0,458,2.319,103,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,5,3,hold,8.983,false,297.500,false,483.601,0.000,0,450,449,539,2.258,122,5.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,zenith,12,3,hold,6.617,false,297.500,false,336.181,0.000,0,308,0,397,2.360,64,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,12,3,hold,6.633,false,297.500,false,336.181,0.000,0,309,308,398,2.360,65,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,3,hold,10.267,false,297.500,false,697.051,0.000,0,0,0,616,2.409,143,5.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,3,hold,4.283,true,155.905,true,700.000,0.000,0,0,0,257,2.388,58,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,zenith,5,3,hold,10.250,false,297.500,false,580.621,0.000,0,526,0,615,2.408,143,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,5,3,hold,10.050,false,297.500,false,564.541,0.000,0,514,513,603,2.390,139,5.0,2.700,current position,weave
+beta,caustic,0%,durability+5,zenith,12,3,hold,10.150,false,297.500,false,565.081,0.000,0,520,0,609,2.477,92,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,12,3,hold,12.233,false,297.500,false,696.421,0.000,0,645,644,734,2.485,110,5.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,3,1s on / .5s off,7.633,false,297.500,false,49.361,0.000,0,0,0,458,2.319,103,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,3,1s on / .5s off,5.067,true,157.388,true,700.000,0.000,0,0,0,304,2.231,71,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,zenith,5,3,1s on / .5s off,9.000,false,297.500,false,422.401,0.000,0,398,0,540,2.258,123,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,5,3,1s on / .5s off,8.300,false,297.500,false,376.321,0.000,0,356,355,498,2.301,113,5.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,zenith,12,3,1s on / .5s off,7.217,false,297.500,false,312.001,0.000,0,291,0,433,2.372,72,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,12,3,1s on / .5s off,7.250,false,297.500,false,312.001,0.000,0,293,292,435,2.375,72,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,3,1s on / .5s off,9.550,false,297.500,false,519.769,0.000,0,0,0,573,2.398,133,5.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,3,1s on / .5s off,6.283,true,134.359,true,700.000,0.000,0,0,0,377,2.324,88,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,zenith,5,3,1s on / .5s off,10.267,false,297.500,false,502.801,0.000,0,474,0,616,2.409,143,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,5,3,1s on / .5s off,10.250,false,297.500,false,502.801,0.000,0,473,472,615,2.408,143,5.0,2.700,current position,weave
+beta,caustic,0%,durability+5,zenith,12,3,1s on / .5s off,12.200,false,297.500,false,629.281,0.000,0,590,0,732,2.486,110,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,12,3,1s on / .5s off,12.233,false,297.500,false,629.821,0.000,0,592,591,734,2.485,110,5.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,10,hold,6.933,false,297.500,false,49.361,0.000,0,0,0,416,2.320,258,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,10,hold,3.683,true,181.155,true,700.000,0.000,0,0,0,221,2.053,147,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,zenith,5,10,hold,7.650,false,297.500,false,401.581,0.000,0,370,0,459,2.318,285,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,5,10,hold,7.933,false,297.500,false,418.201,0.000,0,387,386,476,2.301,295,5.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,zenith,12,10,hold,4.883,false,297.500,false,221.462,0.000,0,204,0,293,2.367,125,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,12,10,hold,5.233,false,297.500,false,238.621,0.000,0,225,224,314,2.323,133,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,10,hold,7.000,false,297.500,false,428.068,0.000,0,0,0,420,2.357,270,5.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,10,hold,4.283,true,240.075,true,700.000,0.000,0,0,0,257,2.388,168,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,zenith,5,10,hold,7.383,false,297.500,false,384.961,0.000,0,354,0,443,2.391,285,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,5,10,hold,6.400,false,297.500,false,319.561,0.000,0,295,294,384,2.340,249,5.0,2.700,current position,weave
+beta,caustic,0%,durability+5,zenith,12,10,hold,5.517,false,297.500,false,270.241,0.000,0,242,0,331,2.408,144,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,12,10,hold,5.333,false,297.500,false,254.161,0.000,0,231,230,320,2.433,138,5.0,2.700,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,10,1s on / .5s off,7.933,false,297.500,false,49.361,0.000,0,0,0,476,2.301,295,5.0,14.450,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,10,1s on / .5s off,5.067,true,210.443,true,700.000,0.000,0,0,0,304,2.231,195,5.0,14.450,motion-compensated,orbit
+beta,caustic,0%,durability+5,zenith,5,10,1s on / .5s off,5.567,false,297.500,false,201.602,0.000,0,192,0,334,2.266,211,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,5,10,1s on / .5s off,7.650,false,297.500,false,343.081,0.000,0,317,316,459,2.318,285,5.0,2.700,current position,orbit
+beta,caustic,0%,durability+5,zenith,12,10,1s on / .5s off,4.683,false,297.500,false,152.281,0.000,0,139,0,281,2.384,119,5.0,2.700,current position,orbit
+beta,caustic,50% after buildup,durability+5,zenith,12,10,1s on / .5s off,5.300,false,297.500,false,185.521,0.000,0,176,175,318,2.316,135,5.0,2.700,current position,orbit
+beta,flamethrower,n/a,durability+5,zenith,5,10,1s on / .5s off,6.400,false,297.500,false,346.456,0.000,0,0,0,384,2.340,249,5.0,14.450,current position,weave
+beta,flamethrower,n/a,durability+5,zenith,5,10,1s on / .5s off,6.283,true,287.370,true,700.000,0.000,0,0,0,377,2.324,244,5.0,14.450,motion-compensated,weave
+beta,caustic,0%,durability+5,zenith,5,10,1s on / .5s off,6.400,false,297.500,false,263.761,0.000,0,242,0,384,2.340,249,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,5,10,1s on / .5s off,6.983,false,297.500,false,297.001,0.000,0,277,276,419,2.359,269,5.0,2.700,current position,weave
+beta,caustic,0%,durability+5,zenith,12,10,1s on / .5s off,6.450,false,297.500,false,264.301,0.000,0,245,0,387,2.433,165,5.0,2.700,current position,weave
+beta,caustic,50% after buildup,durability+5,zenith,12,10,1s on / .5s off,5.517,false,297.500,false,201.602,0.000,0,189,188,331,2.408,144,5.0,2.700,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,3,hold,20.000,true,36.000,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,3,hold,1.500,true,9.000,true,900.000,0.000,0,0,0,90,2.266,17,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,fortress,5,3,hold,16.000,true,36.000,true,900.000,0.000,0,871,0,960,2.298,165,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,5,3,hold,8.717,true,27.000,true,900.000,0.000,0,434,433,523,2.297,91,9.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,fortress,12,3,hold,16.000,true,198.000,true,900.000,0.000,0,871,0,960,2.298,107,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,12,3,hold,8.717,true,90.000,true,900.000,0.000,0,434,433,523,2.298,60,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,3,hold,8.500,true,99.000,true,900.000,0.000,0,0,0,510,2.413,89,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,3,hold,1.700,true,0.000,true,900.000,0.000,0,0,0,102,2.240,18,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,fortress,5,3,hold,16.000,true,180.000,true,900.000,0.000,0,871,0,960,2.432,170,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,5,3,hold,8.717,true,99.000,true,900.000,0.000,0,434,433,523,2.439,91,9.0,8.400,current position,weave
+gamma,caustic,0%,neutral,fortress,12,3,hold,12.267,false,220.000,false,679.644,0.000,0,647,0,736,2.473,69,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,12,3,hold,8.717,true,135.000,true,900.000,0.000,0,434,433,523,2.489,50,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,20.000,true,36.000,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,2.000,true,9.000,true,900.000,0.000,0,0,0,120,2.281,21,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,fortress,5,3,1s on / .5s off,18.317,true,36.000,true,900.000,0.000,0,957,0,1099,2.301,189,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,5,3,1s on / .5s off,11.417,true,36.000,true,900.000,0.000,0,543,542,685,2.297,117,9.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,fortress,12,3,1s on / .5s off,17.683,false,220.000,false,872.603,0.000,0,919,0,1061,2.295,118,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,12,3,1s on / .5s off,11.417,true,126.000,true,900.000,0.000,0,543,542,685,2.276,78,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,9.967,true,99.000,true,900.000,0.000,0,0,0,598,2.416,108,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,3,1s on / .5s off,2.350,true,9.000,true,900.000,0.000,0,0,0,141,2.377,25,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,fortress,5,3,1s on / .5s off,18.317,true,198.000,true,900.000,0.000,0,957,0,1099,2.429,197,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,5,3,1s on / .5s off,11.417,true,99.000,true,900.000,0.000,0,543,542,685,2.424,123,9.0,8.400,current position,weave
+gamma,caustic,0%,neutral,fortress,12,3,1s on / .5s off,12.267,false,220.000,false,568.443,0.000,0,594,0,736,2.473,69,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,12,3,1s on / .5s off,11.417,true,189.000,true,900.000,0.000,0,543,542,685,2.472,65,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,10,hold,20.000,true,180.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,10,hold,1.500,true,18.000,true,900.000,0.000,0,0,0,90,2.266,54,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,fortress,5,10,hold,16.000,true,126.000,true,900.000,0.000,0,871,0,960,2.298,537,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,5,10,hold,8.717,true,81.000,true,900.000,0.000,0,434,433,523,2.297,295,9.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,fortress,12,10,hold,5.900,false,220.000,false,286.123,0.000,0,265,0,354,2.279,133,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,12,10,hold,5.900,false,220.000,false,555.402,0.000,0,265,264,354,2.279,133,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,10,hold,7.000,false,220.000,false,730.619,0.000,0,0,0,420,2.411,241,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,10,hold,1.700,true,27.000,true,900.000,0.000,0,0,0,102,2.240,58,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,fortress,5,10,hold,7.000,false,220.000,false,359.604,0.000,0,331,0,420,2.411,241,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,5,10,hold,7.000,false,220.000,false,696.202,0.000,0,331,330,420,2.411,241,9.0,8.400,current position,weave
+gamma,caustic,0%,neutral,fortress,12,10,hold,4.167,false,220.000,false,180.562,0.000,0,161,0,250,2.467,90,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,12,10,hold,4.167,false,220.000,false,345.802,0.000,0,161,160,250,2.467,90,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,20.000,true,180.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,2.000,true,18.000,true,900.000,0.000,0,0,0,120,2.281,68,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,fortress,5,10,1s on / .5s off,18.317,true,153.000,true,900.000,0.000,0,957,0,1099,2.301,619,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,5,10,1s on / .5s off,11.417,true,108.000,true,900.000,0.000,0,543,542,685,2.297,382,9.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,fortress,12,10,1s on / .5s off,5.900,false,220.000,false,221.202,0.000,0,212,0,354,2.279,133,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,fortress,12,10,1s on / .5s off,5.900,false,220.000,false,349.722,0.000,0,212,211,354,2.279,133,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,7.000,false,220.000,false,663.618,0.000,0,0,0,420,2.411,241,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,fortress,5,10,1s on / .5s off,2.350,true,27.000,true,900.000,0.000,0,0,0,141,2.377,81,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,fortress,5,10,1s on / .5s off,7.000,false,220.000,false,282.003,0.000,0,278,0,420,2.411,241,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,5,10,1s on / .5s off,7.000,false,220.000,false,471.722,0.000,0,278,277,420,2.411,241,9.0,8.400,current position,weave
+gamma,caustic,0%,neutral,fortress,12,10,1s on / .5s off,4.167,false,220.000,false,127.402,0.000,0,108,0,250,2.467,90,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,fortress,12,10,1s on / .5s off,4.167,false,220.000,false,194.722,0.000,0,108,107,250,2.467,90,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,3,hold,20.000,true,30.600,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,3,hold,1.500,true,7.650,true,900.000,0.000,0,0,0,90,2.266,17,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,fortress,5,3,hold,16.000,true,30.600,true,900.000,0.000,0,871,0,960,2.298,165,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,5,3,hold,8.717,true,22.950,true,900.000,0.000,0,434,433,523,2.297,91,9.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,fortress,12,3,hold,16.000,true,168.300,true,900.000,0.000,0,871,0,960,2.298,107,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,12,3,hold,8.717,true,76.500,true,900.000,0.000,0,434,433,523,2.298,60,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,3,hold,8.500,true,84.150,true,900.000,0.000,0,0,0,510,2.413,89,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,3,hold,1.700,true,0.000,true,900.000,0.000,0,0,0,102,2.240,18,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,fortress,5,3,hold,16.000,true,153.000,true,900.000,0.000,0,871,0,960,2.432,170,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,5,3,hold,8.717,true,84.150,true,900.000,0.000,0,434,433,523,2.439,91,9.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,fortress,12,3,hold,16.000,true,260.100,true,900.000,0.000,0,871,0,960,2.486,91,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,12,3,hold,8.717,true,114.750,true,900.000,0.000,0,434,433,523,2.489,50,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,20.000,true,30.600,false,0.000,0.000,0,0,0,1200,2.302,205,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,2.000,true,7.650,true,900.000,0.000,0,0,0,120,2.281,21,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,fortress,5,3,1s on / .5s off,18.317,true,30.600,true,900.000,0.000,0,957,0,1099,2.301,189,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,5,3,1s on / .5s off,11.417,true,30.600,true,900.000,0.000,0,543,542,685,2.297,117,9.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,fortress,12,3,1s on / .5s off,18.317,true,191.250,true,900.000,0.000,0,957,0,1099,2.292,122,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,12,3,1s on / .5s off,11.417,true,107.100,true,900.000,0.000,0,543,542,685,2.276,78,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,9.967,true,84.150,true,900.000,0.000,0,0,0,598,2.416,108,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,3,1s on / .5s off,2.350,true,7.650,true,900.000,0.000,0,0,0,141,2.377,25,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,fortress,5,3,1s on / .5s off,18.317,true,168.300,true,900.000,0.000,0,957,0,1099,2.429,197,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,5,3,1s on / .5s off,11.417,true,84.150,true,900.000,0.000,0,543,542,685,2.424,123,9.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,fortress,12,3,1s on / .5s off,18.317,true,275.400,true,900.000,0.000,0,957,0,1099,2.488,105,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,12,3,1s on / .5s off,11.417,true,160.650,true,900.000,0.000,0,543,542,685,2.472,65,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,10,hold,20.000,true,153.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,10,hold,1.500,true,15.300,true,900.000,0.000,0,0,0,90,2.266,54,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,fortress,5,10,hold,16.000,true,107.100,true,900.000,0.000,0,871,0,960,2.298,537,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,5,10,hold,8.717,true,68.850,true,900.000,0.000,0,434,433,523,2.297,295,9.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,fortress,12,10,hold,12.017,false,385.000,false,665.284,0.000,0,632,0,721,2.280,270,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,12,10,hold,8.717,true,275.400,true,900.000,0.000,0,434,433,523,2.298,194,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,10,hold,8.500,true,275.400,true,900.000,0.000,0,0,0,510,2.413,294,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,10,hold,1.700,true,22.950,true,900.000,0.000,0,0,0,102,2.240,58,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,fortress,5,10,hold,11.650,false,385.000,false,636.564,0.000,0,610,0,699,2.439,407,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,5,10,hold,8.717,true,298.350,true,900.000,0.000,0,434,433,523,2.439,302,9.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,fortress,12,10,hold,8.867,false,385.000,false,468.524,0.000,0,443,0,532,2.491,199,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,12,10,hold,8.717,true,374.850,true,900.000,0.000,0,434,433,523,2.489,195,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,20.000,true,153.000,false,0.000,0.000,0,0,0,1200,2.302,675,9.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,2.000,true,15.300,true,900.000,0.000,0,0,0,120,2.281,68,9.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,fortress,5,10,1s on / .5s off,18.317,true,130.050,true,900.000,0.000,0,957,0,1099,2.301,619,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,5,10,1s on / .5s off,11.417,true,91.800,true,900.000,0.000,0,543,542,685,2.297,382,9.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,fortress,12,10,1s on / .5s off,12.017,false,385.000,false,554.083,0.000,0,579,0,721,2.280,270,9.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,fortress,12,10,1s on / .5s off,11.417,true,359.550,true,900.000,0.000,0,543,542,685,2.276,256,9.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,9.967,true,321.300,true,900.000,0.000,0,0,0,598,2.416,349,9.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,fortress,5,10,1s on / .5s off,2.350,true,22.950,true,900.000,0.000,0,0,0,141,2.377,81,9.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,fortress,5,10,1s on / .5s off,11.650,false,385.000,false,541.403,0.000,0,557,0,699,2.439,407,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,5,10,1s on / .5s off,11.417,true,382.500,true,900.000,0.000,0,543,542,685,2.424,398,9.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,fortress,12,10,1s on / .5s off,8.867,false,385.000,false,375.803,0.000,0,390,0,532,2.491,199,9.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,fortress,12,10,1s on / .5s off,8.867,false,385.000,false,626.722,0.000,0,390,389,532,2.491,199,9.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,3,hold,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.242,8,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,3,hold,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.242,8,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,scepter,5,3,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,8,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,5,3,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,8,20.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,scepter,12,3,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,9,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,12,3,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,9,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,3,hold,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.385,8,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,3,hold,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.385,8,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,scepter,5,3,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,8,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,5,3,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,8,20.0,8.400,current position,weave
+gamma,caustic,0%,neutral,scepter,12,3,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,9,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,12,3,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,9,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.242,8,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.242,8,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,8,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,8,20.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,scepter,12,3,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,9,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,12,3,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,9,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.385,8,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.385,8,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,8,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,5,3,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,8,20.0,8.400,current position,weave
+gamma,caustic,0%,neutral,scepter,12,3,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,9,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,12,3,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,9,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,10,hold,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.242,13,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,10,hold,0.200,false,220.000,false,45.501,0.000,0,0,0,12,2.246,12,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,scepter,5,10,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,13,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,5,10,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,13,20.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,scepter,12,10,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,17,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,12,10,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,17,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,10,hold,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.385,12,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,10,hold,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.385,12,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,scepter,5,10,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,12,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,5,10,hold,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,12,20.0,8.400,current position,weave
+gamma,caustic,0%,neutral,scepter,12,10,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,17,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,12,10,hold,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,17,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.242,13,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,10,1s on / .5s off,0.200,false,220.000,false,45.501,0.000,0,0,0,12,2.246,12,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,13,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.242,13,20.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,scepter,12,10,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,17,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,scepter,12,10,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.264,17,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,23.502,0.000,0,0,0,13,2.385,12,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,45.668,0.000,0,0,0,13,2.385,12,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,12,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,5,10,1s on / .5s off,0.217,false,220.000,false,5.039,0.000,0,0,0,13,2.385,12,20.0,8.400,current position,weave
+gamma,caustic,0%,neutral,scepter,12,10,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,17,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,scepter,12,10,1s on / .5s off,0.333,false,220.000,false,6.719,0.000,0,0,0,20,2.362,17,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,3,hold,0.717,false,385.000,false,51.012,0.000,0,0,0,43,2.176,19,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,3,hold,0.617,false,385.000,false,229.676,0.000,0,0,0,37,2.176,16,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,scepter,5,3,hold,0.717,false,385.000,false,13.438,0.000,0,0,0,43,2.176,19,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,5,3,hold,0.617,false,385.000,false,11.758,0.000,0,0,0,37,2.176,16,20.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,scepter,12,3,hold,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.205,22,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,12,3,hold,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.205,22,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,3,hold,0.517,false,385.000,false,26.508,0.000,0,0,0,31,2.402,14,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,3,hold,0.717,false,385.000,false,275.678,0.000,0,0,0,43,2.387,19,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,scepter,5,3,hold,0.617,false,385.000,false,11.758,0.000,0,0,0,37,2.397,16,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,5,3,hold,0.717,false,385.000,false,13.438,0.000,0,0,0,43,2.387,19,20.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,scepter,12,3,hold,1.800,false,385.000,false,16.797,9.560,0,19,0,108,2.313,35,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,12,3,hold,2.233,false,385.000,false,16.797,24.160,0,45,44,134,2.449,41,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,3,1s on / .5s off,0.717,false,385.000,false,51.012,0.000,0,0,0,43,2.176,19,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,3,1s on / .5s off,0.617,false,385.000,false,229.676,0.000,0,0,0,37,2.176,16,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,scepter,5,3,1s on / .5s off,0.717,false,385.000,false,13.438,0.000,0,0,0,43,2.176,19,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,5,3,1s on / .5s off,0.617,false,385.000,false,11.758,0.000,0,0,0,37,2.176,16,20.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,scepter,12,3,1s on / .5s off,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.205,22,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,12,3,1s on / .5s off,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.205,22,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,3,1s on / .5s off,0.717,false,385.000,false,28.512,0.000,0,0,0,43,2.387,19,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,3,1s on / .5s off,0.717,false,385.000,false,275.678,0.000,0,0,0,43,2.387,19,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,scepter,5,3,1s on / .5s off,0.617,false,385.000,false,11.758,0.000,0,0,0,37,2.397,16,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,5,3,1s on / .5s off,0.717,false,385.000,false,13.438,0.000,0,0,0,43,2.387,19,20.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,scepter,12,3,1s on / .5s off,1.800,false,385.000,false,16.797,19.960,0,0,0,108,2.313,35,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,12,3,1s on / .5s off,1.833,false,385.000,false,16.797,18.280,0,0,0,110,2.336,37,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,10,hold,0.567,false,385.000,false,49.509,0.000,0,0,0,34,2.178,30,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,10,hold,0.517,false,385.000,false,183.674,0.000,0,0,0,31,2.183,29,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,scepter,5,10,hold,0.567,false,385.000,false,10.078,0.000,0,0,0,34,2.178,30,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,5,10,hold,0.517,false,385.000,false,10.078,0.000,0,0,0,31,2.183,29,20.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,scepter,12,10,hold,0.933,false,385.000,false,16.797,0.000,0,0,0,56,2.206,37,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,12,10,hold,0.767,false,385.000,false,13.438,0.000,0,0,0,46,2.218,33,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,10,hold,0.617,false,385.000,false,27.510,0.000,0,0,0,37,2.397,31,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,10,hold,0.517,false,385.000,false,183.674,0.000,0,0,0,31,2.402,29,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,scepter,5,10,hold,0.350,false,385.000,false,6.719,0.000,0,0,0,21,2.399,21,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,5,10,hold,0.350,false,385.000,false,6.719,0.000,0,0,0,21,2.399,21,20.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,scepter,12,10,hold,1.133,false,385.000,false,16.797,21.640,0,0,0,68,2.293,45,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,12,10,hold,1.250,false,385.000,false,16.797,19.960,0,0,0,75,2.410,47,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,10,1s on / .5s off,0.517,false,385.000,false,26.508,0.000,0,0,0,31,2.183,29,20.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,10,1s on / .5s off,0.517,false,385.000,false,183.674,0.000,0,0,0,31,2.183,29,20.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,scepter,5,10,1s on / .5s off,0.350,false,385.000,false,6.719,0.000,0,0,0,21,2.209,21,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,5,10,1s on / .5s off,0.567,false,385.000,false,10.078,0.000,0,0,0,34,2.178,30,20.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,scepter,12,10,1s on / .5s off,0.933,false,385.000,false,16.797,0.000,0,0,0,56,2.206,37,20.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,scepter,12,10,1s on / .5s off,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.205,37,20.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,scepter,5,10,1s on / .5s off,0.617,false,385.000,false,27.510,0.000,0,0,0,37,2.397,31,20.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,scepter,5,10,1s on / .5s off,0.517,false,385.000,false,183.674,0.000,0,0,0,31,2.402,29,20.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,scepter,5,10,1s on / .5s off,0.517,false,385.000,false,10.078,0.000,0,0,0,31,2.402,29,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,5,10,1s on / .5s off,0.617,false,385.000,false,11.758,0.000,0,0,0,37,2.397,31,20.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,scepter,12,10,1s on / .5s off,1.250,false,385.000,false,16.797,25.000,0,0,0,75,2.410,47,20.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,scepter,12,10,1s on / .5s off,1.250,false,385.000,false,16.797,25.000,0,0,0,75,2.410,47,20.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,3,hold,0.383,false,220.000,false,52.855,0.000,0,0,0,23,2.192,8,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,3,hold,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.192,8,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,reign,5,3,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,8,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,5,3,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,8,30.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,reign,12,3,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,5,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,12,3,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,5,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,3,hold,0.383,false,220.000,false,27.855,0.000,0,0,0,23,2.392,8,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,3,hold,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.392,8,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,reign,5,3,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,8,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,5,3,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,8,30.0,8.400,current position,weave
+gamma,caustic,0%,neutral,reign,12,3,hold,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,5,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,12,3,hold,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,5,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,52.855,0.000,0,0,0,23,2.192,8,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.192,8,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,8,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,8,30.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,reign,12,3,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,5,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,12,3,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,5,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,27.855,0.000,0,0,0,23,2.392,8,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.392,8,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,8,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,5,3,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,8,30.0,8.400,current position,weave
+gamma,caustic,0%,neutral,reign,12,3,1s on / .5s off,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,5,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,12,3,1s on / .5s off,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,5,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,10,hold,0.383,false,220.000,false,52.855,0.000,0,0,0,23,2.192,17,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,10,hold,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.192,17,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,reign,5,10,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,17,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,5,10,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,17,30.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,reign,12,10,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,13,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,12,10,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,13,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,10,hold,0.383,false,220.000,false,27.855,0.000,0,0,0,23,2.392,17,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,10,hold,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.392,17,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,reign,5,10,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,17,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,5,10,hold,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,17,30.0,8.400,current position,weave
+gamma,caustic,0%,neutral,reign,12,10,hold,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,13,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,12,10,hold,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,13,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,52.855,0.000,0,0,0,23,2.192,17,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.192,17,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,17,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.192,17,30.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,reign,12,10,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,13,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,reign,12,10,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.248,13,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,27.855,0.000,0,0,0,23,2.392,17,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,77.520,0.000,0,0,0,23,2.392,17,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,17,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,5,10,1s on / .5s off,0.383,false,220.000,false,6.719,0.000,0,0,0,23,2.392,17,30.0,8.400,current position,weave
+gamma,caustic,0%,neutral,reign,12,10,1s on / .5s off,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,13,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,reign,12,10,1s on / .5s off,0.450,false,220.000,false,8.398,0.000,0,0,0,27,2.350,13,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,3,hold,0.700,false,385.000,false,156.047,0.000,0,0,0,42,2.163,14,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,3,hold,0.700,false,385.000,false,155.711,0.000,0,0,0,42,2.163,14,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,reign,5,3,hold,0.700,false,385.000,false,11.758,0.000,0,0,0,42,2.163,14,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,5,3,hold,0.700,false,385.000,false,11.758,0.000,0,0,0,42,2.163,14,30.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,reign,12,3,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,7,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,12,3,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,7,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,3,hold,0.533,false,385.000,false,29.367,0.000,0,0,0,32,2.390,10,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,3,hold,0.533,false,385.000,false,104.031,0.000,0,0,0,32,2.390,10,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,reign,5,3,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,10,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,5,3,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,10,30.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,reign,12,3,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,7,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,12,3,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,7,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,3,1s on / .5s off,0.700,false,385.000,false,156.047,0.000,0,0,0,42,2.163,14,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,3,1s on / .5s off,0.700,false,385.000,false,155.711,0.000,0,0,0,42,2.163,14,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,reign,5,3,1s on / .5s off,0.700,false,385.000,false,11.758,0.000,0,0,0,42,2.163,14,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,5,3,1s on / .5s off,0.700,false,385.000,false,11.758,0.000,0,0,0,42,2.163,14,30.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,reign,12,3,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,7,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,12,3,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,7,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,3,1s on / .5s off,0.533,false,385.000,false,29.367,0.000,0,0,0,32,2.390,10,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,3,1s on / .5s off,0.533,false,385.000,false,104.031,0.000,0,0,0,32,2.390,10,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,reign,5,3,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,10,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,5,3,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,10,30.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,reign,12,3,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,7,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,12,3,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,7,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,10,hold,0.700,false,385.000,false,156.047,0.000,0,0,0,42,2.163,33,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,10,hold,0.700,false,385.000,false,155.711,0.000,0,0,0,42,2.163,33,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,reign,5,10,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.168,25,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,5,10,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.168,25,30.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,reign,12,10,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,19,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,12,10,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,19,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,10,hold,0.533,false,385.000,false,29.367,0.000,0,0,0,32,2.390,25,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,10,hold,0.533,false,385.000,false,104.031,0.000,0,0,0,32,2.390,25,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,reign,5,10,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,25,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,5,10,hold,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,25,30.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,reign,12,10,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,19,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,12,10,hold,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,19,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,10,1s on / .5s off,0.700,false,385.000,false,156.047,0.000,0,0,0,42,2.163,33,30.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,10,1s on / .5s off,0.700,false,385.000,false,155.711,0.000,0,0,0,42,2.163,33,30.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.168,25,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.168,25,30.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,reign,12,10,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,19,30.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,reign,12,10,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.228,19,30.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,29.367,0.000,0,0,0,32,2.390,25,30.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,104.031,0.000,0,0,0,32,2.390,25,30.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,25,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,5,10,1s on / .5s off,0.533,false,385.000,false,10.078,0.000,0,0,0,32,2.390,25,30.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,reign,12,10,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,19,30.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,reign,12,10,1s on / .5s off,0.600,false,385.000,false,10.078,0.000,0,0,0,36,2.331,19,30.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,3,hold,1.433,false,220.000,false,727.693,0.000,0,0,0,86,2.182,33,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,3,hold,1.433,false,220.000,false,727.526,0.000,0,0,0,86,2.182,33,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,antumbra,5,3,hold,1.433,false,220.000,false,25.195,0.000,0,0,0,86,2.182,33,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,5,3,hold,1.433,false,220.000,false,25.195,0.000,0,0,0,86,2.182,33,17.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,antumbra,12,3,hold,3.217,false,220.000,false,73.430,0.000,0,104,0,193,2.199,54,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,12,3,hold,3.217,false,220.000,false,73.430,0.000,0,104,103,193,2.199,54,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,3,hold,2.400,false,220.000,false,1145.379,0.000,0,0,0,144,2.366,49,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,3,hold,2.400,false,220.000,false,1145.212,0.000,0,0,0,144,2.366,49,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,antumbra,5,3,hold,2.400,false,220.000,false,49.313,0.000,0,55,0,144,2.366,49,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,5,3,hold,2.400,false,220.000,false,49.313,0.000,0,55,54,144,2.366,49,17.0,8.400,current position,weave
+gamma,caustic,0%,neutral,antumbra,12,3,hold,4.717,false,220.000,false,116.625,0.000,0,194,0,283,2.427,72,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,12,3,hold,4.717,false,220.000,false,116.625,0.000,0,194,193,283,2.427,72,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,3,1s on / .5s off,1.433,false,220.000,false,523.693,0.000,0,0,0,86,2.182,33,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,3,1s on / .5s off,1.433,false,220.000,false,523.526,0.000,0,0,0,86,2.182,33,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,antumbra,5,3,1s on / .5s off,1.433,false,220.000,false,16.797,0.000,0,0,0,86,2.182,33,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,5,3,1s on / .5s off,1.433,false,220.000,false,16.797,0.000,0,0,0,86,2.182,33,17.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,antumbra,12,3,1s on / .5s off,3.217,false,220.000,false,47.633,0.000,0,51,0,193,2.199,54,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,12,3,1s on / .5s off,3.217,false,220.000,false,47.633,0.000,0,51,50,193,2.199,54,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,3,1s on / .5s off,2.400,false,220.000,false,992.379,0.000,0,0,0,144,2.366,49,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,3,1s on / .5s off,2.400,false,220.000,false,890.212,0.000,0,0,0,144,2.366,49,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,antumbra,5,3,1s on / .5s off,2.400,false,220.000,false,31.914,0.000,0,2,0,144,2.366,49,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,5,3,1s on / .5s off,2.400,false,220.000,false,31.914,0.000,0,2,1,144,2.366,49,17.0,8.400,current position,weave
+gamma,caustic,0%,neutral,antumbra,12,3,1s on / .5s off,4.717,false,220.000,false,82.430,0.000,0,141,0,283,2.427,72,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,12,3,1s on / .5s off,4.717,false,220.000,false,82.430,0.000,0,141,140,283,2.427,72,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,10,hold,1.433,false,220.000,false,727.693,0.000,0,0,0,86,2.182,70,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,10,hold,1.433,false,220.000,false,727.526,0.000,0,0,0,86,2.182,70,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,antumbra,5,10,hold,1.433,false,220.000,false,25.195,0.000,0,0,0,86,2.182,70,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,5,10,hold,1.433,false,220.000,false,25.195,0.000,0,0,0,86,2.182,70,17.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,antumbra,12,10,hold,2.683,false,220.000,false,57.352,0.000,0,72,0,161,2.240,89,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,12,10,hold,2.683,false,220.000,false,57.352,0.000,0,72,71,161,2.240,89,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,10,hold,2.383,false,220.000,false,1145.212,0.000,0,0,0,143,2.374,105,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,10,hold,2.383,false,220.000,false,1145.045,0.000,0,0,0,143,2.374,105,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,antumbra,5,10,hold,2.383,false,220.000,false,49.313,0.000,0,54,0,143,2.374,105,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,5,10,hold,2.383,false,220.000,false,49.313,0.000,0,54,53,143,2.374,105,17.0,8.400,current position,weave
+gamma,caustic,0%,neutral,antumbra,12,10,hold,3.333,false,220.000,false,78.109,0.000,0,111,0,200,2.393,106,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,12,10,hold,3.333,false,220.000,false,78.109,0.000,0,111,110,200,2.393,106,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,10,1s on / .5s off,1.433,false,220.000,false,523.693,0.000,0,0,0,86,2.182,70,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,10,1s on / .5s off,1.433,false,220.000,false,523.526,0.000,0,0,0,86,2.182,70,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,antumbra,5,10,1s on / .5s off,1.433,false,220.000,false,16.797,0.000,0,0,0,86,2.182,70,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,5,10,1s on / .5s off,1.433,false,220.000,false,16.797,0.000,0,0,0,86,2.182,70,17.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,antumbra,12,10,1s on / .5s off,2.683,false,220.000,false,36.594,0.000,0,19,0,161,2.240,89,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,antumbra,12,10,1s on / .5s off,2.683,false,220.000,false,36.594,0.000,0,19,18,161,2.240,89,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,antumbra,5,10,1s on / .5s off,2.383,false,220.000,false,992.212,0.000,0,0,0,143,2.374,105,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,antumbra,5,10,1s on / .5s off,2.383,false,220.000,false,890.045,0.000,0,0,0,143,2.374,105,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,antumbra,5,10,1s on / .5s off,2.383,false,220.000,false,31.914,0.000,0,0,0,143,2.374,105,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,5,10,1s on / .5s off,2.383,false,220.000,false,31.914,0.000,0,0,0,143,2.374,105,17.0,8.400,current position,weave
+gamma,caustic,0%,neutral,antumbra,12,10,1s on / .5s off,3.333,false,220.000,false,49.313,0.000,0,58,0,200,2.393,106,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,antumbra,12,10,1s on / .5s off,3.333,false,220.000,false,49.313,0.000,0,58,57,200,2.393,106,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,hold,3.300,false,385.000,false,1715.396,0.000,0,0,0,198,2.268,68,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,hold,3.300,false,385.000,false,1715.229,0.000,0,0,0,198,2.268,68,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,antumbra,5,3,hold,3.300,false,385.000,false,76.430,0.000,0,109,0,198,2.268,68,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,5,3,hold,3.300,false,385.000,false,76.430,0.000,0,109,108,198,2.268,68,17.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,antumbra,12,3,hold,7.667,false,385.000,false,201.336,0.000,0,371,0,460,2.161,125,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,12,3,hold,7.667,false,385.000,false,201.336,0.000,0,371,370,460,2.161,125,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,hold,3.250,false,385.000,false,1510.896,0.000,0,0,0,195,2.295,68,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,hold,3.250,false,385.000,false,1561.729,0.000,0,0,0,195,2.295,68,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,antumbra,5,3,hold,3.250,false,385.000,false,76.430,0.000,0,106,0,195,2.295,68,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,5,3,hold,3.250,false,385.000,false,76.430,0.000,0,106,105,195,2.295,68,17.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,antumbra,12,3,hold,7.650,false,385.000,false,201.336,0.000,0,370,0,459,2.449,115,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,12,3,hold,7.650,false,385.000,false,201.336,0.000,0,370,369,459,2.449,115,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,1s on / .5s off,3.300,false,385.000,false,1205.396,0.000,0,0,0,198,2.268,68,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,1s on / .5s off,3.300,false,385.000,false,1205.229,0.000,0,0,0,198,2.268,68,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,antumbra,5,3,1s on / .5s off,3.300,false,385.000,false,47.633,0.000,0,56,0,198,2.268,68,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,5,3,1s on / .5s off,3.300,false,385.000,false,47.633,0.000,0,56,55,198,2.268,68,17.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,antumbra,12,3,1s on / .5s off,7.667,false,385.000,false,150.344,0.000,0,318,0,460,2.161,125,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,12,3,1s on / .5s off,7.667,false,385.000,false,150.344,0.000,0,318,317,460,2.161,125,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,1s on / .5s off,3.250,false,385.000,false,1153.896,0.000,0,0,0,195,2.295,68,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,3,1s on / .5s off,3.250,false,385.000,false,1051.729,0.000,0,0,0,195,2.295,68,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,antumbra,5,3,1s on / .5s off,3.250,false,385.000,false,47.633,0.000,0,53,0,195,2.295,68,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,5,3,1s on / .5s off,3.250,false,385.000,false,47.633,0.000,0,53,52,195,2.295,68,17.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,antumbra,12,3,1s on / .5s off,7.650,false,385.000,false,150.344,0.000,0,317,0,459,2.449,115,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,12,3,1s on / .5s off,7.650,false,385.000,false,150.344,0.000,0,317,316,459,2.449,115,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,hold,3.300,false,385.000,false,1715.396,0.000,0,0,0,198,2.268,146,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,hold,3.300,false,385.000,false,1715.229,0.000,0,0,0,198,2.268,146,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,antumbra,5,10,hold,3.300,false,385.000,false,76.430,0.000,0,109,0,198,2.268,146,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,5,10,hold,3.300,false,385.000,false,76.430,0.000,0,109,108,198,2.268,146,17.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,antumbra,12,10,hold,4.133,false,385.000,false,100.547,0.000,0,159,0,248,2.196,135,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,12,10,hold,4.133,false,385.000,false,100.547,0.000,0,159,158,248,2.196,135,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,hold,2.933,false,385.000,false,1354.723,0.000,0,0,0,176,2.362,132,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,hold,2.933,false,385.000,false,1405.556,0.000,0,0,0,176,2.362,132,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,antumbra,5,10,hold,2.933,false,385.000,false,65.391,0.000,0,87,0,176,2.362,132,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,5,10,hold,2.933,false,385.000,false,65.391,0.000,0,87,86,176,2.362,132,17.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,antumbra,12,10,hold,5.333,false,385.000,false,135.703,0.000,0,231,0,320,2.444,174,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,12,10,hold,5.333,false,385.000,false,135.703,0.000,0,231,230,320,2.444,174,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,1s on / .5s off,3.300,false,385.000,false,1205.396,0.000,0,0,0,198,2.268,146,17.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,1s on / .5s off,3.300,false,385.000,false,1205.229,0.000,0,0,0,198,2.268,146,17.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,antumbra,5,10,1s on / .5s off,3.300,false,385.000,false,47.633,0.000,0,56,0,198,2.268,146,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,5,10,1s on / .5s off,3.300,false,385.000,false,47.633,0.000,0,56,55,198,2.268,146,17.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,antumbra,12,10,1s on / .5s off,4.133,false,385.000,false,71.391,0.000,0,106,0,248,2.196,135,17.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,antumbra,12,10,1s on / .5s off,4.133,false,385.000,false,71.391,0.000,0,106,105,248,2.196,135,17.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,1s on / .5s off,2.933,false,385.000,false,1048.723,0.000,0,0,0,176,2.362,132,17.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,antumbra,5,10,1s on / .5s off,2.933,false,385.000,false,946.556,0.000,0,0,0,176,2.362,132,17.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,antumbra,5,10,1s on / .5s off,2.933,false,385.000,false,39.594,0.000,0,34,0,176,2.362,132,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,5,10,1s on / .5s off,2.933,false,385.000,false,39.594,0.000,0,34,33,176,2.362,132,17.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,antumbra,12,10,1s on / .5s off,5.333,false,385.000,false,98.508,0.000,0,178,0,320,2.444,174,17.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,antumbra,12,10,1s on / .5s off,5.333,false,385.000,false,98.508,0.000,0,178,177,320,2.444,174,17.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,3,hold,0.483,false,220.000,false,209.535,0.000,0,0,0,29,2.135,12,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,3,hold,0.483,false,220.000,false,209.367,0.000,0,0,0,29,2.135,12,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,eclipse,5,3,hold,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,12,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,5,3,hold,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,12,22.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,eclipse,12,3,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,16,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,12,3,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,16,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,3,hold,0.433,false,220.000,false,168.031,0.000,0,0,0,26,2.360,10,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,3,hold,0.433,false,220.000,false,167.863,0.000,0,0,0,26,2.360,10,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,eclipse,5,3,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,10,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,5,3,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,10,22.0,8.400,current position,weave
+gamma,caustic,0%,neutral,eclipse,12,3,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,16,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,12,3,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,16,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,3,1s on / .5s off,0.483,false,220.000,false,209.535,0.000,0,0,0,29,2.135,12,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,3,1s on / .5s off,0.483,false,220.000,false,209.367,0.000,0,0,0,29,2.135,12,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,eclipse,5,3,1s on / .5s off,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,12,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,5,3,1s on / .5s off,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,12,22.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,eclipse,12,3,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,16,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,12,3,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,16,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,3,1s on / .5s off,0.433,false,220.000,false,168.031,0.000,0,0,0,26,2.360,10,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,3,1s on / .5s off,0.433,false,220.000,false,167.863,0.000,0,0,0,26,2.360,10,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,eclipse,5,3,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,10,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,5,3,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,10,22.0,8.400,current position,weave
+gamma,caustic,0%,neutral,eclipse,12,3,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,16,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,12,3,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,16,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,10,hold,0.483,false,220.000,false,209.535,0.000,0,0,0,29,2.135,27,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,10,hold,0.483,false,220.000,false,209.367,0.000,0,0,0,29,2.135,27,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,eclipse,5,10,hold,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,27,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,5,10,hold,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,27,22.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,eclipse,12,10,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,31,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,12,10,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,31,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,10,hold,0.433,false,220.000,false,168.031,0.000,0,0,0,26,2.360,19,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,10,hold,0.433,false,220.000,false,167.863,0.000,0,0,0,26,2.360,19,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,eclipse,5,10,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,19,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,5,10,hold,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,19,22.0,8.400,current position,weave
+gamma,caustic,0%,neutral,eclipse,12,10,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,31,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,12,10,hold,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,31,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,10,1s on / .5s off,0.483,false,220.000,false,209.535,0.000,0,0,0,29,2.135,27,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,10,1s on / .5s off,0.483,false,220.000,false,209.367,0.000,0,0,0,29,2.135,27,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,neutral,eclipse,5,10,1s on / .5s off,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,27,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,5,10,1s on / .5s off,0.483,false,220.000,false,8.398,0.000,0,0,0,29,2.135,27,22.0,8.400,current position,orbit
+gamma,caustic,0%,neutral,eclipse,12,10,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,31,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,neutral,eclipse,12,10,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.182,31,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,neutral,eclipse,5,10,1s on / .5s off,0.433,false,220.000,false,168.031,0.000,0,0,0,26,2.360,19,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,neutral,eclipse,5,10,1s on / .5s off,0.433,false,220.000,false,167.863,0.000,0,0,0,26,2.360,19,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,neutral,eclipse,5,10,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,19,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,5,10,1s on / .5s off,0.433,false,220.000,false,8.398,0.000,0,0,0,26,2.360,19,22.0,8.400,current position,weave
+gamma,caustic,0%,neutral,eclipse,12,10,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,31,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,neutral,eclipse,12,10,1s on / .5s off,0.817,false,220.000,false,15.117,0.000,0,0,0,49,2.177,31,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,hold,0.950,false,385.000,false,419.238,0.000,0,0,0,57,2.155,24,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,hold,0.950,false,385.000,false,419.070,0.000,0,0,0,57,2.155,24,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,eclipse,5,3,hold,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.155,24,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,5,3,hold,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.155,24,22.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,eclipse,12,3,hold,2.333,false,385.000,false,46.313,0.000,0,51,0,140,2.207,48,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,12,3,hold,2.333,false,385.000,false,46.313,0.000,0,51,50,140,2.207,48,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,hold,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.170,19,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,hold,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.170,19,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,eclipse,5,3,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,19,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,5,3,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,19,22.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,eclipse,12,3,hold,1.583,false,385.000,false,26.875,0.000,0,6,0,95,2.313,30,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,12,3,hold,1.583,false,385.000,false,26.875,0.000,0,6,5,95,2.313,30,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,1s on / .5s off,0.950,false,385.000,false,419.238,0.000,0,0,0,57,2.155,24,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,1s on / .5s off,0.950,false,385.000,false,419.070,0.000,0,0,0,57,2.155,24,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,eclipse,5,3,1s on / .5s off,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.155,24,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,5,3,1s on / .5s off,0.950,false,385.000,false,16.797,0.000,0,0,0,57,2.155,24,22.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,eclipse,12,3,1s on / .5s off,2.333,false,385.000,false,31.914,0.000,0,0,0,140,2.207,48,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,12,3,1s on / .5s off,2.333,false,385.000,false,31.914,0.000,0,0,0,140,2.207,48,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,1s on / .5s off,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.170,19,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,3,1s on / .5s off,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.170,19,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,eclipse,5,3,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,19,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,5,3,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,19,22.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,eclipse,12,3,1s on / .5s off,1.583,false,385.000,false,18.477,0.000,0,0,0,95,2.313,30,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,12,3,1s on / .5s off,1.583,false,385.000,false,18.477,0.000,0,0,0,95,2.313,30,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.137,40,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.137,40,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.137,40,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.137,40,22.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,eclipse,12,10,hold,2.333,false,385.000,false,46.313,0.000,0,51,0,140,2.207,85,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,12,10,hold,2.333,false,385.000,false,46.313,0.000,0,51,50,140,2.207,85,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.170,39,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.170,39,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,39,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,5,10,hold,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,39,22.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,eclipse,12,10,hold,1.583,false,385.000,false,26.875,0.000,0,6,0,95,2.313,58,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,12,10,hold,1.583,false,385.000,false,26.875,0.000,0,6,5,95,2.313,58,22.0,8.400,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.137,40,22.0,42.500,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.137,40,22.0,42.500,motion-compensated,orbit
+gamma,caustic,0%,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.137,40,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.137,40,22.0,8.400,current position,orbit
+gamma,caustic,0%,durability+5,eclipse,12,10,1s on / .5s off,2.333,false,385.000,false,31.914,0.000,0,0,0,140,2.207,85,22.0,8.400,current position,orbit
+gamma,caustic,50% after buildup,durability+5,eclipse,12,10,1s on / .5s off,2.333,false,385.000,false,31.914,0.000,0,0,0,140,2.207,85,22.0,8.400,current position,orbit
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,377.230,0.000,0,0,0,51,2.170,39,22.0,42.500,current position,weave
+gamma,flamethrower,n/a,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,377.063,0.000,0,0,0,51,2.170,39,22.0,42.500,motion-compensated,weave
+gamma,caustic,0%,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,39,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,5,10,1s on / .5s off,0.850,false,385.000,false,15.117,0.000,0,0,0,51,2.170,39,22.0,8.400,current position,weave
+gamma,caustic,0%,durability+5,eclipse,12,10,1s on / .5s off,1.583,false,385.000,false,18.477,0.000,0,0,0,95,2.313,58,22.0,8.400,current position,weave
+gamma,caustic,50% after buildup,durability+5,eclipse,12,10,1s on / .5s off,1.583,false,385.000,false,18.477,0.000,0,0,0,95,2.313,58,22.0,8.400,current position,weave
