@@ -20,7 +20,7 @@ public final class ShipVariant extends UnitType implements Cloneable{
     private ShipLoadout loadout = ShipLoadout.defaults;
     private boolean legacy;
     private ShipCosmetics cosmetics = ShipCosmetics.defaults;
-    private Color hullTint, accentTint;
+    private Color hullTint, accentTint, workLight;
     private BulletType projectile;
     private mindustry.entities.units.BuildPlan lastBuildPlan;
 
@@ -37,6 +37,7 @@ public final class ShipVariant extends UnitType implements Cloneable{
     }
 
     public ShipCosmetics cosmetics(){ return cosmetics; }
+    public Color workLight(){return workLight;}
 
     public boolean legacy(){
         return legacy;
@@ -96,6 +97,7 @@ public final class ShipVariant extends UnitType implements Cloneable{
         hullTint = cosmetics.hull() == -1 ? null : ShipCosmetics.colour(cosmetics.hull());
         accentTint = cosmetics.accents() == -1 ? null : ShipCosmetics.colour(cosmetics.accents());
         engineColor = cosmetics.engine() == -1 ? base.engineColor : ShipCosmetics.colour(cosmetics.engine());
+        workLight=engineColor==null?null:shipyard.graphics.EngineHighlights.colour(engineColor,0f);
         engineColorInner = cosmetics.engine() == -1 ? base.engineColorInner : engineColor.cpy().lerp(Color.white, .65f);
         drawBuildBeam = cosmetics.engine() == -1 && base.drawBuildBeam;
         trailColor = cosmetics.engine() == -1 ? base.trailColor : engineColor;
@@ -114,7 +116,9 @@ public final class ShipVariant extends UnitType implements Cloneable{
     @Override
     public void draw(Unit unit){
         if(cosmetics.engine()!=-1 && unit.isAdded() && !unit.inFogTo(mindustry.Vars.player.team())){
-            if(unit.activelyBuilding())lastBuildPlan=unit.buildPlan();
+            // Track the current queue target even out of range: native buildAlpha can remain
+            // high while an unfinished plan is queued, so it cannot expire a completed target.
+            if(unit.updateBuilding && unit.buildPlan()!=null)lastBuildPlan=unit.buildPlan();
             if(lastBuildPlan!=null && tier.base().drawBuildBeam)
                 shipyard.graphics.WorkBeams.build(unit,lastBuildPlan);
             if(unit.buildAlpha<=.001f)lastBuildPlan=null;
@@ -133,6 +137,8 @@ public final class ShipVariant extends UnitType implements Cloneable{
 
     @Override
     public void drawWeapons(Unit unit){
+        // Divergence is emitted by the hull, with no physical gun sprites or heat overlays.
+        if(loadout.weapon()==shipyard.model.ShipWeapon.divergence)return;
         if(hullTint == null && accentTint == null)super.drawWeapons(unit);
         else{
             applyColor(unit);

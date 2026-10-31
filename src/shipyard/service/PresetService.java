@@ -112,6 +112,7 @@ public final class PresetService{
         else publish(Vars.player,tier);
     }
     static void publish(Player player,ShipTier tier){
+        if(tier==null)return;
         Catalog catalog=catalog(player,tier);
         if(!Vars.net.server() || !Vars.headless && player==Vars.player){local.put(tier,catalog);revision++;return;}
         if(player.con==null)return;
@@ -131,7 +132,9 @@ public final class PresetService{
     }
     public static String delete(Player player,ShipyardBuild yard,String selected){
         if(Vars.net.client() || !yard.editing(player))return "Possess the Shipyard to delete a loadout.";
-        ShipTier tier=ShipTier.of(yard.ship.type);String root=prefix(player,tier);
+        ShipTier tier=ShipTier.of(yard.ship.type);
+        if(tier==null)return "This ship family uses its own loadouts.";
+        String root=prefix(player,tier);
         Properties before=(Properties)LoadoutService.profiles.clone();
         LoadoutService.profiles.remove(root+".preset."+token(name(selected)));
         if(selected.equals(LoadoutService.profiles.getProperty(root+".selected")))LoadoutService.profiles.remove(root+".selected");

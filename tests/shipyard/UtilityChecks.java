@@ -65,7 +65,7 @@ final class UtilityChecks{
                 check(!(boolean)utilities.getMethod("intersects",float[].class,float.class,float.class,float.class,float.class)
                     .invoke(null,band,beams[i],beams[i+1],beams[i+2],beams[i+3]),"projection clips into shield band");
                 check((boolean)utilities.getMethod("intersects",float[].class,float.class,float.class,float.class,float.class)
-                    .invoke(null,band,beams[i+2],beams[i+3],beams[i+2]+dx/len*6f,beams[i+3]+dy/len*6f),"projection stops too far from shield");
+                    .invoke(null,band,beams[i+2],beams[i+3],beams[i+2]+dx/len,beams[i+3]+dy/len),"projection stops too far from shield");
             }
             Bullet front=shot(ship,depth,0,Team.crux,10),rear=shot(ship,-radius,0,Team.crux,10),ally=shot(ship,depth,2,Team.sharded,10);
             Groups.bullet.updatePhysics();update.invoke(null);

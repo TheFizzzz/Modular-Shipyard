@@ -15,7 +15,7 @@ final class SuperfactorialWeapons{
         try{
             Round b=round.paletteClone();
             b.backColor=b.hitColor=b.trailColor=b.lightColor=color.cpy();
-            b.frontColor=color.cpy().lerp(Color.white,.35f);
+            b.frontColor=shipyard.graphics.EngineHighlights.colour(color,.35f);
             return b;
         }catch(CloneNotSupportedException e){throw new AssertionError(e);}
     }

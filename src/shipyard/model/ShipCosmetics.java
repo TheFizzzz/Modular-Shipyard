@@ -43,7 +43,8 @@ public record ShipCosmetics(int hull, int accents, int engine){
             case 1 -> ship.team.color.cpy();
             case 2 -> {
                 var tier = ShipTier.of(ship.type);
-                yield (tier != null && tier.base().engineColor != null ? tier.base().engineColor : ship.team.color).cpy();
+                var base = tier == null ? ship.type : tier.base();
+                yield (base.engineColor == null ? ship.team.color : base.engineColor).cpy();
             }
             default -> throw new IllegalArgumentException("Unknown colour channel");
         };

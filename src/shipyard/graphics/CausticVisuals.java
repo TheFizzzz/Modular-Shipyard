@@ -13,10 +13,10 @@ public final class CausticVisuals{
     public static void load(){} // Register effect IDs consistently during content load, including headless hosts.
     public record Finish(CausticBeam.Trace[] from,CausticBeam.Trace[] to,float x,float y,boolean focused){}
     public static final Effect ignition=new Effect(12f,70f,e->{
-        Draw.color(e.color);Draw.alpha(.3f*e.fout());Fill.circle(e.x,e.y,3f+e.fin()*5f);
+        EngineHighlights.draw(e.color);Draw.alpha(.3f*e.fout());Fill.circle(e.x,e.y,3f+e.fin()*5f);
         Draw.alpha(e.fout());Lines.stroke(1.2f*e.fout());Lines.circle(e.x,e.y,1f+e.fin()*6f);
         for(int side=-1;side<=1;side+=2)Drawf.tri(e.x,e.y,2.2f*e.fout(),8f*e.fout(),e.rotation+side*25f);
-        Draw.color(e.color,Color.white,.8f);Fill.circle(e.x,e.y,2.2f*e.fout());
+        EngineHighlights.draw(e.color,.8f);Fill.circle(e.x,e.y,2.2f*e.fout());
         Drawf.light(e.x,e.y,22f,e.color,.5f*e.fout());Draw.reset();Lines.stroke(1f);
     }).followParent(true);
     public static final Effect finish=new Effect(14f,320f,e->{
@@ -34,7 +34,7 @@ public final class CausticVisuals{
             // Opposite final aims can briefly collapse the interpolated path to one point.
             if(Mathf.dst2(startX,startY,Mathf.lerp(oldPoint.x,newPoint.x,travel),Mathf.lerp(oldPoint.y,newPoint.y,travel))<.0001f)continue;
             for(int pass=0;pass<2;pass++){
-                Draw.color(e.color);Draw.alpha((pass==0?.16f:.65f)*strength);
+                EngineHighlights.draw(e.color);Draw.alpha((pass==0?.16f:.65f)*strength);
                 Lines.stroke((pass==0?2.4f:.65f)*strength);Lines.beginLine();
                 for(int step=0;step<=CausticBeam.segments;step++){
                     float position=Mathf.lerp(tail,1f,step/(float)CausticBeam.segments);
@@ -80,14 +80,14 @@ public final class CausticVisuals{
         return true;
     }
     public static void focus(float x,float y,Color colour,float clock,float strength){
-        Draw.color(colour);Draw.alpha(.2f*strength);Fill.circle(x,y,4.8f);
+        EngineHighlights.draw(colour);Draw.alpha(.2f*strength);Fill.circle(x,y,4.8f);
         Draw.alpha(.8f*strength);Lines.stroke(.65f*strength);
         Lines.arc(x,y,2.7f,.65f,clock*5f);
         for(int i=0;i<3;i++){
             float angle=clock*-4f+i*120f;
             Fill.circle(x+Angles.trnsx(angle,2.8f),y+Angles.trnsy(angle,2.8f),.55f*strength);
         }
-        Draw.color(colour,Color.white,.65f);Draw.alpha(strength);
+        EngineHighlights.draw(colour,.65f);Draw.alpha(strength);
         Fill.poly(x,y,4,1.35f*strength,clock*3f);
         Drawf.light(x,y,14f,colour,.3f*strength);Draw.reset();Lines.stroke(1f);
     }

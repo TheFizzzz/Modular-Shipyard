@@ -45,7 +45,7 @@ final class EigenChecks{
             owner.mounts[0].weapon.update(owner,owner.mounts[0]);
             check(owner.mounts[0].recoil<1f && owner.mounts[0].heat<1f,"launcher visuals did not cool down");
             owner.isShooting=false;step(185);check(live(owner)==1,"released trigger kept deploying");
-            deploy(owner);check(owner.mounts[0].totalShots==5 && owner.mounts[1].totalShots==4,"launches did not alternate guns");
+            deploy(owner);check(owner.mounts.length==1 && owner.mounts[0].totalShots==9,"central tube did not launch all nine drones");
             owner.aim(400,400);owner.isShooting=true;step(60);check(live(owner)==9,"swarm did not fill to nine with unit cap zero");check(enemy.health<10000,"swarm missed air/ground contact");near(ally.health,friendly,"swarm hit ally");
             float hp=new float[]{20,55,130}[tier];
             for(int id:ids(owner)){

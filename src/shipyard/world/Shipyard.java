@@ -9,6 +9,10 @@ import arc.util.Time;
 import arc.util.io.*;
 import mindustry.Vars;
 import mindustry.content.UnitTypes;
+import mindustry.type.UnitType;
+import shipyard.content.ShipVariants;
+import shipyard.model.ShipCosmetics;
+import shipyard.model.ShipLoadout;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.world.Block;
@@ -21,12 +25,33 @@ import shipyard.ui.ShipyardDialog;
 public class Shipyard extends Block{
     public static final float editorRange=8f*Vars.tilesize;
     public static final Color fabricationColor=Color.valueOf("c7a4af");
-    private TextureRegion offRegion,lightsRegion;
+    public Color fabricationTint=fabricationColor.cpy();
+    protected TextureRegion offRegion,lightsRegion;
     public Shipyard(String name){
         super(name);size=3;health=1600;solid=true;destructible=true;update=true;
         consumePower(1f);configurable=false;saveConfig=false;copyConfig=false;
         envDisabled=Env.scorching;buildType=ShipyardBuild::new;
     }
+    /** Family hooks let addons reuse native possession, persistence and fabrication drawing. */
+    public boolean supportsShip(UnitType type){return ShipTier.of(type)!=null;}
+    public void prepareDock(Unit ship){shipyard.content.ShipWeapons.resetSpin(ship);}
+    public void trackShip(Unit ship){shipyard.service.UnitLoadouts.track(ship);}
+    public void bindShip(Unit ship){shipyard.content.ShipWeapons.bind(ship);}
+    public void openEditor(ShipyardBuild yard,Unit ship){ShipyardDialog.open(yard,ship);}
+    public String loadout(Unit ship){return ShipVariants.current(ship.type).encode();}
+    public ShipCosmetics cosmetics(Unit ship){return ShipVariants.cosmetics(ship.type);}
+    public void restoreShip(Unit ship,String encoded,ShipCosmetics colours){
+        ShipTier tier=ShipTier.of(ship.type);
+        ShipLoadout loadout=ShipLoadout.parse(encoded).forRestore(tier);
+        if(tier==null || !loadout.valid(tier) || !colours.valid())throw new IllegalArgumentException("Invalid docked loadout");
+        float health=ship.health;
+        ship.setType(ShipVariants.get(tier,loadout,colours));bindShip(ship);ship.health=health;
+    }
+
+    @Override public void createIcons(MultiPacker packer){
+        super.createIcons(packer);shipyard.graphics.ShipGunSprites.pack(packer);shipyard.graphics.WorkBeams.pack(packer);
+    }
+
     @Override public void load(){
         super.load();
         offRegion=Core.atlas.find(name+"-off",region);
@@ -46,7 +71,7 @@ public class Shipyard extends Block{
         public boolean usable(){return isValid() && enabled && hasEditorPower() && block.supportsEnv(Vars.state.rules.env);}
         public boolean acceptsEditor(Unit unit){
             return usable() && unit!=null && unit.isValid() && unit.isPlayer() && unit.team==team
-                && unit.dst2(this)<=editorRange*editorRange && ShipTier.of(unit.type)!=null;
+                && unit.dst2(this)<=editorRange*editorRange && supportsShip(unit.type);
         }
         public boolean owns(Player player){return ship!=null && player!=null && player.id==ownerId;}
         public boolean editing(Player player){return owns(player) && player.team()==team && ship.team==team && player.unit()==unit() && usable();}
@@ -61,8 +86,8 @@ public class Shipyard extends Block{
             Player player=original.getPlayer();if(player==null)return;
             ship=original;ownerId=player.id;ownerUuid=player.uuid();session=System.nanoTime();opened=false;
             entryX=ship.x;entryY=ship.y;wasCore=ship.spawnedByCore;
-            shipyard.content.ShipWeapons.resetSpin(ship);
-            ship.spawnedByCore=false;ship.vel.setZero();player.unit(unit());ship.remove();
+            prepareDock(ship);
+            ship.spawnedByCore=false;ship.vel.setZero();player.unit(unit());ShipyardSessions.suspend(ship);
             ShipyardSessions.remember(this);
             ShipyardSessions.sync(this,ship,false);
         }
@@ -71,7 +96,7 @@ public class Shipyard extends Block{
             Unit returning=ship;
             // Stored units are serialized by the building, outside the normal unit-state chunk.
             // Re-register the view before release so subsequent native snapshots can repair it.
-            shipyard.service.UnitLoadouts.track(returning);
+            trackShip(returning);
             // Broadcast before clearing the session so clients get the same unit and owner.
             ShipyardSessions.sync(this,returning,true);
             ShipyardSessions.forget(this);
@@ -93,14 +118,14 @@ public class Shipyard extends Block{
         @Override public void updateTile(){
             if(ship==null)return;
             if(Vars.net.client()){
-                Unit ghost=Groups.unit.getByID(ship.id);if(ghost!=null)ghost.remove();
+                Unit ghost=Groups.unit.getByID(ship.id);if(ghost!=null)ShipyardSessions.suspend(ghost);
             }
             Player owner=Groups.player.getByID(ownerId);
             if(!Vars.net.client()){
                 if(ship.team!=team){release(owner);return;}
                 if(ownerId<0){
                     // Saves and disconnects keep the original ship safe until its owner returns.
-                    for(Player player:Groups.player) if(player.uuid().equals(ownerUuid) && player.team()==team && !player.dead() && ShipTier.of(player.unit().type)!=null){
+                    for(Player player:Groups.player) if(player.uuid().equals(ownerUuid) && player.team()==team && !player.dead() && supportsShip(player.unit().type)){
                         ownerId=player.id;release(player);return;
                     }
                 }else if(!usable() || owner==null || owner.team()!=team || owner.unit()!=unit()){
@@ -108,7 +133,7 @@ public class Shipyard extends Block{
                 }
             }
             if(!Vars.headless && owner==Vars.player && editing(owner) && !opened){
-                opened=true;ShipyardDialog.open(this,ship);
+                opened=true;openEditor(this,ship);
             }
         }
         @Override public void onRemoved(){
@@ -136,17 +161,16 @@ public class Shipyard extends Block{
             try{
                 Draw.scl(fit);
                 // The coordinate overload uses the supplied tint without the building helper's yellow scan line.
-                Drawf.construct(x,y,icon,fabricationColor,0f,Mathf.absin(Time.globalTime,45f,1f),.14f,Time.globalTime);
+                Drawf.construct(x,y,icon,fabricationTint,0f,Mathf.absin(Time.globalTime,45f,1f),.14f,Time.globalTime);
             }finally{Draw.scl(previousX,previousY);}
-            Draw.color(fabricationColor,.85f);
+            Draw.color(fabricationTint,.85f);
             Lines.stroke(1f);
             Lines.lineAngleCenter(x+Mathf.sin(Time.globalTime,20f,pad/2f),y,90f,pad);
             Draw.reset();
         }
         private void drawPortrait(Unit source,float fit){
-            ShipTier tier=ShipTier.of(source.type);
-            if(portrait==null || ShipTier.of(portrait.type)!=tier)portrait=tier.base().create(source.team);
-            if(portrait.type!=source.type){portrait.setType(source.type);shipyard.content.ShipWeapons.bind(portrait);}
+            if(portrait==null || portrait.classId()!=source.classId())portrait=source.type.create(source.team);
+            if(portrait.type!=source.type){portrait.setType(source.type);bindShip(portrait);}
             portrait.set(0f,0f);portrait.rotation=90f;portrait.team=source.team;
             portrait.health=portrait.maxHealth*source.healthf();
             previousTransform.set(Draw.trans());portraitTransform.set(previousTransform).translate(x,y).scale(fit,fit);

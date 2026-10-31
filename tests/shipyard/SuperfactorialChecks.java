@@ -45,7 +45,13 @@ final class SuperfactorialChecks{
             var hot=hotType.create(ship,ship.team,ship.x,ship.y,0);hot.collision(armoured,armoured.x,armoured.y);
             near(before-armoured.health,mindustry.entities.Damage.applyArmor(gun.bullet.damage,.4f),"hot-round armour damage");
             check(before-armoured.health>coldDamage,"spin-up penetration did not help against armour");armoured.remove();
-            check(slow>=2 && slow<=4 && fast>=29 && fast<=31,"bad spin-up cadence: "+slow+" -> "+fast);
+            check(slow>=1 && slow<=3 && fast>=14 && fast<=16,"bad spin-up cadence: "+slow+" -> "+fast);
+            // Four alternating barrels give this mount only 15 independent shots per second.
+            // Sample more actual rounds if the first short random window misses the outer spread.
+            for(int tick=0;tick<180 && !wide;tick++){
+                ExperimentalChecks.fire(ship,ship.x+140,ship.y,1);
+                if(mount.bullet!=null && Angles.angleDist(mount.bullet.rotation(),0f)>18f)wide=true;
+            }
             check(wide,"native firing did not produce wide spread");
             // A second player's identical definition must start cold despite the first's full spin.
             Unit other=UnitTypes.alpha.create(Team.sharded);other.spawnedByCore=true;other.dead=false;other.set(320,500);other.rotation=0;other.add();
@@ -59,10 +65,10 @@ final class SuperfactorialChecks{
             ExperimentalChecks.fire(ship,ship.x+140,ship.y,240);
             ship.reloadMultiplier=1.5f;start=mount.totalShots;
             ExperimentalChecks.fire(ship,ship.x+140,ship.y,60);
-            check(mount.totalShots-start>=44 && mount.totalShots-start<=46,"fractional Fire Rate upgrade was lost");
+            check(mount.totalShots-start>=21 && mount.totalShots-start<=24,"fractional Fire Rate upgrade was lost");
             ship.reloadMultiplier=2f;start=mount.totalShots;
             ExperimentalChecks.fire(ship,ship.x+140,ship.y,60);
-            check(mount.totalShots-start>=59,"Fire Rate did not affect full-speed minigun");ship.reloadMultiplier=1f;
+            check(mount.totalShots-start>=29,"Fire Rate did not affect full-speed minigun");ship.reloadMultiplier=1f;
             ship.disarmed=true;start=mount.totalShots;ExperimentalChecks.fire(ship,ship.x+140,ship.y,1);
             check(start==mount.totalShots,"disarmed minigun fired");ship.disarmed=false;
             start=mount.totalShots;ExperimentalChecks.fire(ship,ship.x+140,ship.y,60);
@@ -82,7 +88,7 @@ final class SuperfactorialChecks{
             ship.remove();
         }
         check(Vars.content.bullets().size==registered,"minigun loadouts registered projectile IDs");
-        System.out.println("PASS: Superfactorial 2-to-30 shots/s native ramp, spread, release/disarm/dock resets, Fire Rate, per-player isolation, snapshotted armour penetration, tier damage and air/ground collision");
+        System.out.println("PASS: Superfactorial four-gun alternating-pair 4-to-60 total shots/s native ramp, spread, release/disarm/dock resets, Fire Rate, per-player isolation, snapshotted armour penetration, tier damage and air/ground collision");
     }
     static void near(float a,float b,String why){ExperimentalChecks.near(a,b,why);}
     static void check(boolean ok,String why){ExperimentalChecks.check(ok,why);}

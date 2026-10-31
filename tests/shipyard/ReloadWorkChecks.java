@@ -16,6 +16,13 @@ final class ReloadWorkChecks{
         var reloading=guns.getMethod("reloading",mindustry.entities.units.WeaponMount.class);
         var intensity=guns.getMethod("reloadIntensity",Unit.class,mindustry.entities.units.WeaponMount.class);
         Color accentBefore=Pal.accent.cpy(),removeBefore=Pal.remove.cpy();
+        var highlight=loader.loadClass("shipyard.graphics.EngineHighlights").getMethod("colour",Color.class,float.class);
+        Color dark=Color.valueOf("101820"),original=dark.cpy();
+        Color pale=(Color)highlight.invoke(null,dark,.2f);
+        check(pale.r>dark.r+.2f && pale.g>dark.g+.2f && pale.b>dark.b+.2f,"dark activity highlight is unreadable");
+        check(dark.equals(original) && pale!=dark,"highlight changed the selected engine colour");
+        Color bright=Color.valueOf("AAFFFF");
+        check(((Color)highlight.invoke(null,bright,.2f)).equals(bright.cpy().lerp(Color.white,.2f)),"bright palettes changed their highlight strength");
         for(int tier=0;tier<3;tier++)for(String weapon:new String[]{"railgun","asymptote"}){
             Unit ship=new mindustry.type.UnitType[]{UnitTypes.alpha,UnitTypes.beta,UnitTypes.gamma}[tier].create(Team.sharded);
             ship.set(300,300);ship.rotation=0;ship.add();ExperimentalChecks.equip(ship,tier,weapon);

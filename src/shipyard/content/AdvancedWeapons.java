@@ -131,7 +131,7 @@ final class AdvancedWeapons{
         BulletType painted(Color color){
             try{
                 Missile b=(Missile)clone();tint(b,color);b.fragBullet=bomblet.painted(color);
-                b.backColor=color.cpy();b.frontColor=color.cpy().lerp(Color.white,.25f);
+                b.backColor=color.cpy();b.frontColor=shipyard.graphics.EngineHighlights.colour(color,.25f);
                 return b;
             }catch(CloneNotSupportedException e){throw new AssertionError(e);}
         }
@@ -148,7 +148,7 @@ final class AdvancedWeapons{
         @Override public void draw(Bullet shot){super.draw(shot);WeaponVisuals.converge(shot,true);}
         @Override public void despawned(Bullet shot){if(!shot.absorbed)super.despawned(shot);}
         BulletType painted(Color color){
-            try{Bomblet b=(Bomblet)clone();tint(b,color);b.backColor=color.cpy();b.frontColor=color.cpy().lerp(Color.white,.65f);return b;}
+            try{Bomblet b=(Bomblet)clone();tint(b,color);b.backColor=color.cpy();b.frontColor=shipyard.graphics.EngineHighlights.colour(color,.65f);return b;}
             catch(CloneNotSupportedException e){throw new AssertionError(e);}
         }
     }

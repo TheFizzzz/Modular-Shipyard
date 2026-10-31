@@ -169,6 +169,8 @@ public class ShipyardSmokeTest{
         InvolutionChecks.run();
         WeaponBudgetChecks.run(block);
         SuperfactorialChecks.run();
+        CustomGunChecks.run();
+        FluxNozzleChecks.run();
         CorrosionChecks.run();
         CausticPenChecks.run();
         WeaponFlareChecks.run();

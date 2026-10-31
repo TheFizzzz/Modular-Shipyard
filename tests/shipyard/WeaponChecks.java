@@ -168,7 +168,7 @@ final class WeaponChecks{
                         near(cluster[2].health,100f,"railgun hit a third target despite its one-target cap");
                         check(cluster[0].health<100 && cluster[1].health==100,"single-target railgun pierced a second target");
                     }else{
-                        float factor=base==UnitTypes.alpha?.5f:base==UnitTypes.beta?1.1f:3f;
+                        float factor=(base==UnitTypes.alpha?.5f:base==UnitTypes.beta?1.1f:3f)*base.weapons.size;
                         near(1000-cluster[0].health,36f*factor,"chain initial damage");
                         near(1000-cluster[1].health,27f*factor,"chain first jump damage");
                         near(1000-cluster[2].health,20.25f*factor,"chain second jump damage");

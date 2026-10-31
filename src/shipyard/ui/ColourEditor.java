@@ -14,7 +14,7 @@ import mindustry.ui.Styles;
 import shipyard.model.*;
 
 /** Native Arc controls: immediate HEX/HSV draft editing, with no world-side effects. */
-final class ColourEditor extends Table{
+public final class ColourEditor extends Table{
     private final Unit ship;
     private final ShipCosmetics[] draft;
     private TextField hex;
@@ -25,6 +25,10 @@ final class ColourEditor extends Table{
     private boolean updating = true;
 
     ColourEditor(Unit ship, ShipCosmetics[] draft, float width){
+        this(ship,draft,width,"shipyard");
+    }
+
+    public ColourEditor(Unit ship,ShipCosmetics[] draft,float width,String prefix){
         this.ship = ship;
         this.draft = draft;
         table(tabs -> {
@@ -34,7 +38,7 @@ final class ColourEditor extends Table{
                 tabs.button("@" + names[index], Styles.flatTogglet, () -> {
                     channel = chosen;
                     sync();
-                }).name("shipyard-colour-tab-"+index).width(width / 3f).height(42f).checked(button -> channel == chosen)
+                }).name(prefix+"-colour-tab-"+index).width(width / 3f).height(42f).checked(button -> channel == chosen)
                     .with(button -> button.getLabel().setFontScale(.8f));
             }
         }).padBottom(8f).row();
@@ -42,7 +46,7 @@ final class ColourEditor extends Table{
         image(Tex.whiteui).size(width, 22f).update(image -> image.setColor(selected)).row();
         table(input -> {
             input.add("HEX #").fontScale(.85f).padRight(6f);
-            hex = input.field("", this::fromHex).name("shipyard-hex").width(width - 74f).height(42f).get();
+            hex = input.field("", this::fromHex).name(prefix+"-hex").width(width - 74f).height(42f).get();
         }).padTop(12f).padBottom(6f).row();
         hex.setMaxLength(7);
         hex.setProgrammaticChangeEvents(false);
@@ -52,7 +56,7 @@ final class ColourEditor extends Table{
         brightness = new Slider(0f, 1f, .001f, false);
         Slider[] sliders = {hue, saturation, brightness};
         String[] labels = {"shipyard.hue", "shipyard.saturation", "shipyard.brightness"};
-        String[] names = {"shipyard-hue", "shipyard-saturation", "shipyard-brightness"};
+        String[] names = {prefix+"-hue", prefix+"-saturation", prefix+"-brightness"};
         for(int i = 0; i < sliders.length; i++){
             final int index = i;
             table(row -> {
@@ -72,11 +76,11 @@ final class ColourEditor extends Table{
         button("@shipyard.randomizecolour", () -> {
             randomize(channel);
             sync();
-        }).name("shipyard-randomize-colour").width(width).height(40f).padTop(8f).row();
+        }).name(prefix+"-randomize-colour").width(width).height(40f).padTop(8f).row();
         button("@shipyard.randomizeall",()->{
             for(int index=0;index<3;index++)randomize(index);
             sync();
-        }).name("shipyard-randomize-all").width(width).height(40f).padTop(8f).row();
+        }).name(prefix+"-randomize-all").width(width).height(40f).padTop(8f).row();
         sync();
     }
 
@@ -85,11 +89,11 @@ final class ColourEditor extends Table{
         if(current<0)rgb=Mathf.random(0xffffff);else if(rgb>=current)rgb++;
         draft[0]=draft[0].withChannel(index,rgb);
     }
-    void refresh(){sync();}
+    public void refresh(){sync();}
 
-    boolean validInput(){ return hex != null && hex.isValid(); }
+    public boolean validInput(){ return hex != null && hex.isValid(); }
 
-    void resetColours(){
+    public void resetColours(){
         draft[0] = ShipCosmetics.defaults;
         sync();
     }

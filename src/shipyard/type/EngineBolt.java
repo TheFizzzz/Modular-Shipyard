@@ -21,8 +21,9 @@ public final class EngineBolt extends LaserBoltBulletType{
         try{
             EngineBolt paintedBolt = (EngineBolt)super.clone();
             paintedBolt.backColor = colour.cpy();
-            paintedBolt.frontColor = colour.cpy().lerp(Color.white, .65f);
-            paintedBolt.trailColor = paintedBolt.hitColor = paintedBolt.lightColor = paintedBolt.backColor;
+            paintedBolt.frontColor = shipyard.graphics.EngineHighlights.colour(colour,.65f);
+            paintedBolt.trailColor = paintedBolt.hitColor = paintedBolt.backColor;
+            paintedBolt.lightColor=shipyard.graphics.EngineHighlights.colour(colour,0f);
             return paintedBolt;
         }catch(CloneNotSupportedException impossible){ throw new AssertionError(impossible); }
     }

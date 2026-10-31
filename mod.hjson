@@ -3,6 +3,6 @@ displayName: "Modular Shipyard"
 author: "TheFizzzz"
 main: shipyard.ModularShipyardMod
 description: "Customize core ships with weapons, stats, colours and loadouts."
-version: 0.29.7
+version: 0.32.29
 minGameVersion: 160.2
 java: true

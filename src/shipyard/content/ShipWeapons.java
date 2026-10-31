@@ -21,16 +21,18 @@ import shipyard.graphics.WeaponVisuals;
 
 /** Fixed projectile/utility marker IDs. Palette clones and private guns never register content. */
 public final class ShipWeapons{
+    public static final float fluxReach=1.1f,fluxCone=8f;
     private static Flame flame;
     private static Shrapnel shrapnel;
     private static UtilityBullet divergence, invariant, operator, eigen;
     private static final Effect flameShoot = new Effect(32f, 80f, e -> {
-        Draw.color(e.color, Color.gray, e.fin());
-        Angles.randLenVectors(e.id, 12, e.finpow() * 60f, e.rotation, 10f,
+        arc.util.Tmp.c1.set(e.color).lerp(Color.white,shipyard.graphics.EngineHighlights.mix(e.color,.2f));
+        Draw.color(arc.util.Tmp.c1,Color.gray,e.fin());
+        Angles.randLenVectors(e.id, 12, e.finpow() * 60f*fluxReach, e.rotation, fluxCone,
             (x,y) -> Fill.circle(e.x+x,e.y+y,.65f+e.fout()*1.5f));
     }).followParent(false);
     static Effect charge(float duration){ return new Effect(duration, 100f, e -> {
-        Draw.color(e.color);
+        shipyard.graphics.EngineHighlights.draw(e.color);
         Lines.stroke(.5f + e.fin());
         Lines.circle(e.x,e.y, (1f-e.fin())*8f);
         Fill.circle(e.x,e.y,e.fin()*2f);
@@ -82,10 +84,19 @@ public final class ShipWeapons{
             BulletType marker=(kind==ShipWeapon.eigen?eigen:kind==ShipWeapon.divergence?divergence:kind==ShipWeapon.invariant?invariant:operator).painted(colour(kind,cosmetics),kind==ShipWeapon.eigen?shipyard.service.EigenService.range:UtilityBalance.range(tier,kind));
             if(kind==ShipWeapon.eigen)marker.damage*=WeaponBalance.damageFactor(tier,kind);
             Seq<Weapon> guns=new Seq<>();
-            for(Weapon base:tier.base().weapons){
-                Gun gun=kind==ShipWeapon.eigen?new DroneGun(base):new Gun(base){@Override public void update(Unit unit,WeaponMount mount){}};
+            int count=kind==ShipWeapon.eigen?1:tier.base().weapons.size;
+            for(int index=0;index<count;index++){
+                Weapon base=tier.base().weapons.get(index);
+                Gun gun=kind==ShipWeapon.eigen?new DroneGun(base):new Gun(base){
+                    @Override public void update(Unit unit,WeaponMount mount){}
+                    @Override public void drawOutline(Unit unit,WeaponMount mount){
+                        if(kind!=ShipWeapon.divergence)super.drawOutline(unit,mount);
+                    }
+                };
                 gun.bullet=marker;gun.reload=kind==ShipWeapon.divergence?UtilityBalance.pulseReload(tier):0f;
-                gun.alternate=false;guns.add(gun);
+                gun.alternate=false;
+                if(kind==ShipWeapon.eigen){shipyard.graphics.ShipGunSprites.mount(gun,tier,kind,index);gun.heatColor=marker.hitColor;}
+                guns.add(gun);
             }
             return guns;
         }
@@ -104,13 +115,19 @@ public final class ShipWeapons{
         // Keep individual matchups useful without unlimited formation-wide damage.
         bullet.pierceCap=switch(kind){case flamethrower,lancer -> 2;case railgun -> 1;case fuse -> 1;default -> bullet.pierceCap;};
         float factor=WeaponBalance.damageFactor(tier,kind);
+        if(kind==ShipWeapon.railgun || kind==ShipWeapon.chain)factor*=tier.base().weapons.size;
+        // One Recurrence discharge replaces two hits: retain their combined armour deduction.
+        if(kind==ShipWeapon.chain)bullet.armorMultiplier*=tier.base().weapons.size;
         bullet.damage*=factor;bullet.splashDamage*=factor;
         if(kind==ShipWeapon.missiles)AdvancedWeapons.scaleFragments(bullet,factor);
         Seq<Weapon> guns=new Seq<>();
-        for(Weapon base : tier.base().weapons){
-            Gun gun=kind==ShipWeapon.caustic?new CausticGun(base):kind==ShipWeapon.superfactorial?new SpoolGun(base):kind==ShipWeapon.railgun || kind==ShipWeapon.asymptote?new ReloadGun(base,kind):new Gun(base);
+        int count=kind==ShipWeapon.railgun || kind==ShipWeapon.chain?1:kind==ShipWeapon.superfactorial?4:tier.base().weapons.size;
+        for(int index=0;index<count;index++){
+            Weapon base=tier.base().weapons.get(index%tier.base().weapons.size);
+            Gun gun=kind==ShipWeapon.caustic?new CausticGun(base):kind==ShipWeapon.superfactorial?new SpoolGun(base,index):kind==ShipWeapon.railgun || kind==ShipWeapon.asymptote?new ReloadGun(base,kind):kind==ShipWeapon.lancer?new BladeGun(base):new Gun(base);
             gun.bullet=bullet;
             gun.reload=reload(kind);
+            if(kind==ShipWeapon.superfactorial)gun.reload*=4f/tier.base().weapons.size;
             gun.shoot=kind==ShipWeapon.fuse ? new ShootSpread(2,20f) : new ShootPattern();
             if(kind==ShipWeapon.railgun) gun.shoot.firstShotDelay=60f;
             gun.shootSound=switch(kind){case flamethrower -> Sounds.shootFlame;case railgun -> Sounds.shootForeshadow;case lancer -> Sounds.shootLaser;case chain -> Sounds.shootArc;case missiles, asymptote -> Sounds.shootMissile;case caustic -> Sounds.beamPlasmaSmall;case superfactorial -> Sounds.shootDuo;default -> Sounds.shootFuse;};
@@ -120,13 +137,17 @@ public final class ShipWeapons{
             gun.recoil=kind==ShipWeapon.flamethrower ? 0f : 1f;
             gun.alternate=kind==ShipWeapon.lancer;
             gun.inaccuracy=kind==ShipWeapon.superfactorial?24f:0f;
+            if(kind==ShipWeapon.railgun || kind==ShipWeapon.superfactorial || kind==ShipWeapon.flamethrower || kind==ShipWeapon.missiles || kind==ShipWeapon.caustic || kind==ShipWeapon.lancer || kind==ShipWeapon.asymptote || kind==ShipWeapon.chain){
+                shipyard.graphics.ShipGunSprites.mount(gun,tier,kind,index);
+                gun.heatColor=color;
+            }
             guns.add(gun);
         }
         return guns;
     }
     public static float reload(ShipWeapon kind){ return switch(kind){case flamethrower->6f;case lancer->80f;case fuse->35f;case railgun->180f;case chain->40f;case missiles->45f;case caustic->30f;case asymptote->100f;case superfactorial->30f;default->0f;}; }
-    public static float range(ShipTier tier, ShipWeapon kind){ if(kind.utility())return UtilityBalance.range(tier,kind);return kind==ShipWeapon.standard ? tier.base().weapons.first().range() : source(kind).range; }
-    public static float damage(ShipTier tier, ShipWeapon kind){ if(kind.utility())return 0f;return (kind==ShipWeapon.standard ? tier.base().weapons.first().bullet : source(kind)).damage * WeaponBalance.damageFactor(tier,kind); }
+    public static float range(ShipTier tier, ShipWeapon kind){ if(kind.utility())return UtilityBalance.range(tier,kind);if(kind==ShipWeapon.flamethrower)return flame.range;return kind==ShipWeapon.standard ? tier.base().weapons.first().range() : source(kind).range; }
+    public static float damage(ShipTier tier, ShipWeapon kind){ if(kind.utility())return 0f;return (kind==ShipWeapon.standard ? tier.base().weapons.first().bullet : source(kind)).damage * WeaponBalance.damageFactor(tier,kind) * (kind==ShipWeapon.railgun || kind==ShipWeapon.chain?tier.base().weapons.size:1f); }
 
     /** Bind private definitions before native Weapon.update and instant ray damage. */
     public static void bind(Unit unit){
@@ -142,7 +163,9 @@ public final class ShipWeapons{
                 WeaponMount old=previous[i];
                 mount.reload=old.reload;mount.rotation=old.rotation;mount.targetRotation=old.targetRotation;
                 mount.aimX=old.aimX;mount.aimY=old.aimY;mount.shoot=old.shoot;mount.rotate=old.rotate;
-                mount.side=old.side;mount.recoil=old.recoil;mount.heat=old.heat;mount.totalShots=old.totalShots;mount.barrelCounter=old.barrelCounter;
+                // Unrelated guns can leave opposite side flags, deadlocking both alternating blades.
+                // Preserve an existing blade pair's cadence through cosmetic/stat rebinds.
+                mount.side=weapon instanceof BladeGun && !(old.weapon instanceof BladeGun)?false:old.side;mount.recoil=old.recoil;mount.heat=old.heat;mount.totalShots=old.totalShots;mount.barrelCounter=old.barrelCounter;
                 if(mount instanceof ReloadMount fresh && old instanceof ReloadMount prior
                     && ((ReloadGun)mount.weapon).kind==((ReloadGun)old.weapon).kind)fresh.cooling=prior.cooling;
             }
@@ -170,6 +193,16 @@ public final class ShipWeapons{
             if(current && mount.weapon==this) super.bullet(unit,mount,x,y,angle,mover);
         }
     }
+    private static final class BladeGun extends Gun{
+        BladeGun(Weapon source){super(source);}
+    }
+    /** A short empty interval after launch, then a smooth reformation during the actual reload. */
+    public static float bladeReadiness(Unit unit,WeaponMount mount){
+        if(!(mount.weapon instanceof BladeGun))return 0f;
+        if(!unit.isAdded())return 1f;
+        float progress=1f-Mathf.clamp(mount.reload/Math.max(.001f,mount.weapon.reload));
+        return Interp.smooth.apply(Mathf.clamp((progress-.15f)/.85f));
+    }
     private static final class ReloadMount extends WeaponMount{
         boolean cooling;
         ReloadMount(Weapon weapon){super(weapon);}
@@ -183,11 +216,14 @@ public final class ShipWeapons{
         float fade=((ReloadGun)mount.weapon).kind==ShipWeapon.railgun?24f:12f;
         return Mathf.clamp(mount.reload/Math.max(.05f,unit.reloadMultiplier)/fade);
     }
-    /** Render after both native and recoloured gun sprites; previews have no live reload. */
+    /** Render seated blades and reload feedback after both native and recoloured gun sprites. */
     public static void drawReload(Unit unit){
-        if(!unit.isAdded())return;
         float z=Draw.z();
-        for(var mount:unit.mounts)if(reloading(mount)){
+        for(var mount:unit.mounts)if(mount.weapon instanceof DroneGun drone)
+            shipyard.graphics.ShipGunSprites.drawEngineTip(unit,mount,drone.engineRegion);
+        for(var mount:unit.mounts)if(mount.weapon instanceof BladeGun)
+            shipyard.graphics.ShipGunSprites.drawBlade(unit,mount,bladeReadiness(unit,mount));
+        for(var mount:unit.mounts)if(unit.isAdded() && reloading(mount)){
             Weapon gun=mount.weapon;
             Draw.z(z+Math.max(0f,gun.layerOffset)+.01f);
             float rotation=unit.rotation-90f,angle=rotation+(gun.rotate?mount.rotation:gun.baseRotation);
@@ -226,7 +262,9 @@ public final class ShipWeapons{
     }
     /** EigenService owns launch timing; native gun mounts retain their recoil and heat visuals. */
     private static final class DroneGun extends Gun{
+        TextureRegion engineRegion;
         DroneGun(Weapon source){super(source);}
+        @Override public void load(){super.load();engineRegion=arc.Core.atlas.find(name+"-engine");}
         @Override public void update(Unit unit,WeaponMount mount){
             mount.recoil=Math.max(0f,mount.recoil-arc.util.Time.delta/Math.max(1f,recoilTime));
             mount.heat=Math.max(0f,mount.heat-arc.util.Time.delta/Math.max(1f,cooldownTime));
@@ -234,47 +272,49 @@ public final class ShipWeapons{
     }
     /** Spin is transient per mount: never alter the shared weapon or a player's status multipliers. */
     private static final class SpoolMount extends WeaponMount{
-        float held,interval=30f;
+        float held,untilPair;
+        int nextPair,firingPair;
+        boolean pulse;
         SpoolMount(Weapon weapon){super(weapon);}
     }
     private static final class SpoolGun extends Gun{
-        SpoolGun(Weapon source){super(source);mountType=SpoolMount::new;}
+        final int pair;
+        SpoolGun(Weapon source,int index){super(source);pair=index==0 || index==3?0:1;mountType=SpoolMount::new;}
         @Override protected void handleBullet(Unit unit,WeaponMount mount,Bullet shot){
             super.handleBullet(unit,mount,shot);
             float spin=((SpoolMount)mount).held/180f;
             SuperfactorialWeapons.penetration(shot,spin);
             WeaponVisuals.spoolShot.at(shot.x,shot.y,shot.rotation(),shot.type.hitColor,Float.valueOf(spin));
         }
-        @Override public void draw(Unit unit,WeaponMount mount){
-            super.draw(unit,mount);
-            SpoolMount spin=(SpoolMount)mount;
-            if(spin.held<=0f)return;
-            float rotation=unit.rotation-90f,weaponRotation=rotation+(rotate?mount.rotation:baseRotation);
-            float realRecoil=Mathf.pow(mount.recoil,recoilPow)*recoil;
-            float mx=unit.x+Angles.trnsx(rotation,x,y)+Angles.trnsx(weaponRotation,shootX,shootY-realRecoil);
-            float my=unit.y+Angles.trnsy(rotation,x,y)+Angles.trnsy(weaponRotation,shootX,shootY-realRecoil);
-            WeaponVisuals.spoolGlow(mx,my,weaponRotation+90f,bullet.hitColor,spin.held/180f,arc.util.Time.time);
-        }
         @Override public void update(Unit unit,WeaponMount mount){
-            SpoolMount spin=(SpoolMount)mount;
-            boolean held=unit.isAdded() && unit.isShooting && mount.shoot && unit.canShoot();
-            spin.held=held?Math.min(180f,spin.held+arc.util.Time.delta):0f;
-            float progress=spin.held/180f;
-            float interval=reload/Mathf.pow(15f,progress*progress);
-            // Preserve fractional reload progress as the firing interval accelerates or resets.
-            mount.reload*=interval/spin.interval;spin.interval=interval;
-            float carry=mount.reload>0f?Math.min(0f,mount.reload-arc.util.Time.delta*unit.reloadMultiplier):0f;
-            int before=mount.totalShots;
-            super.update(unit,mount);
-            // Carry a partial tick so small Fire Rate upgrades still help at rapid intervals.
-            if(mount.totalShots!=before)mount.reload=Math.max(0f,interval+carry);
+            SpoolMount spin=(SpoolMount)mount,leader=(SpoolMount)unit.mounts[0];
+            if(unit.mounts[0]==mount){
+                boolean held=unit.isAdded() && unit.isShooting && mount.shoot && unit.canShoot();
+                leader.held=held?Math.min(180f,leader.held+arc.util.Time.delta):0f;
+                leader.pulse=false;
+                if(!held){leader.untilPair=0f;leader.nextPair=0;}
+                else{
+                    leader.untilPair-=arc.util.Time.delta*unit.reloadMultiplier;
+                    if(leader.untilPair<=0f){
+                        leader.pulse=true;leader.firingPair=leader.nextPair;leader.nextPair^=1;
+                        float progress=leader.held/180f;
+                        // Two rounds per pulse: same aggregate cadence as the original paired guns.
+                        leader.untilPair=Math.max(0f,leader.untilPair+reload*.5f/Mathf.pow(15f,progress*progress));
+                    }
+                }
+            }
+            spin.held=leader.held;
+            boolean input=mount.shoot;
+            mount.shoot=leader.pulse && leader.firingPair==pair && input;
+            if(mount.shoot)mount.reload=0f;
+            try{super.update(unit,mount);}finally{mount.shoot=input;}
         }
     }
     public static void resetSpin(Unit unit){
         for(var mount:unit.mounts){
             if(mount.weapon instanceof CausticGun)CausticGun.off(unit,mount);
             if(mount instanceof SpoolMount spin){
-                mount.reload*=30f/spin.interval;spin.held=0f;spin.interval=30f;
+                spin.held=spin.untilPair=0f;spin.nextPair=0;spin.pulse=false;
             }
         }
     }
@@ -354,7 +394,7 @@ public final class ShipWeapons{
     private static void tint(BulletType bullet,Color color){ bullet.hitColor=color.cpy();bullet.trailColor=bullet.lightColor=bullet.hitColor; }
     private static final class Flame extends BulletType{
         @Override public void draw(Bullet b){super.draw(b);WeaponVisuals.flame(b);}
-        @Override public void init(){ borrow(this,ShipWeapon.flamethrower,BulletType.class);shootEffect=flameShoot;hitEffect=WeaponVisuals.flameHit; }
+        @Override public void init(){ borrow(this,ShipWeapon.flamethrower,BulletType.class);lifetime*=fluxReach;range=calculateRange();shootEffect=flameShoot;hitEffect=WeaponVisuals.flameHit; }
         @Override public void load(){ init(); }
         @Override public void hitEntity(Bullet bullet,Hitboxc target,float health){
             // Physical collisions can collect several overlapping units in the same tick.

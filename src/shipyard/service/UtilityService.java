@@ -172,7 +172,7 @@ public final class UtilityService{
             Call.effect(burst,ship.x,ship.y,radius,colour(ship));
             Call.clientPacketReliable(pulsePacket,epoch+","+ship.team.id+","+tier.ordinal()+","+ship.x+","+ship.y);
         }else burst.at(ship.x,ship.y,radius,colour(ship));
-        sound(Sounds.shootArc,ship,.6f);
+        sound(Sounds.shootArc,ship,.95f);
     }
     private static void push(Unit target,float x,float y,ShipTier tier){
         if(target.mass()<=0f)return;
@@ -189,28 +189,43 @@ public final class UtilityService{
         return vertices(ship.x,ship.y,UtilityBalance.range(tier,ShipWeapon.invariant),UtilityBalance.shieldWidth(tier),angle);
     }
     private static float[] vertices(float x,float y,float radius,float width,float angle){
-        int points=UtilityBalance.shieldSegments+1;
-        float[] v=new float[points*4];
+        int points=UtilityBalance.shieldSegments+1,capSegments=12,at=0;
+        float[] band=new float[(points*2+(capSegments-1)*2)*2];
+        float halfArc=UtilityBalance.shieldArc/2f,halfWidth=width/2f;
         for(int i=0;i<points;i++){
-            float direction=angle-UtilityBalance.shieldArc/2f+UtilityBalance.shieldArc*i/(points-1);
-            int outside=i*2,inside=(points*2-1-i)*2;
-            float localAngle=direction-angle;
-            float outerX=Mathf.cosDeg(localAngle)*(radius+width/2f)*UtilityBalance.shieldDepth;
-            float outerY=Mathf.sinDeg(localAngle)*(radius+width/2f);
-            float innerX=Mathf.cosDeg(localAngle)*(radius-width/2f)*UtilityBalance.shieldDepth;
-            float innerY=Mathf.sinDeg(localAngle)*(radius-width/2f);
-            v[outside]=x+Angles.trnsx(angle,outerX,outerY);
-            v[outside+1]=y+Angles.trnsy(angle,outerX,outerY);
-            v[inside]=x+Angles.trnsx(angle,innerX,innerY);
-            v[inside+1]=y+Angles.trnsy(angle,innerX,innerY);
+            float direction=-halfArc+UtilityBalance.shieldArc*i/(points-1);
+            at=bandPoint(band,at,x,y,angle,Mathf.cosDeg(direction)*(radius+halfWidth),Mathf.sinDeg(direction)*(radius+halfWidth));
         }
-        return v;
+        // A full semicircle joins each outer rim to its inner rim, eliminating square end faces.
+        for(int i=1;i<capSegments;i++){
+            float cap=180f*i/capSegments,radial=halfWidth*Mathf.cosDeg(cap),tangent=halfWidth*Mathf.sinDeg(cap);
+            at=bandPoint(band,at,x,y,angle,Mathf.cosDeg(halfArc)*(radius+radial)-Mathf.sinDeg(halfArc)*tangent,
+                Mathf.sinDeg(halfArc)*(radius+radial)+Mathf.cosDeg(halfArc)*tangent);
+        }
+        for(int i=points-1;i>=0;i--){
+            float direction=-halfArc+UtilityBalance.shieldArc*i/(points-1);
+            at=bandPoint(band,at,x,y,angle,Mathf.cosDeg(direction)*(radius-halfWidth),Mathf.sinDeg(direction)*(radius-halfWidth));
+        }
+        for(int i=1;i<capSegments;i++){
+            float cap=180f*i/capSegments,radial=-halfWidth*Mathf.cosDeg(cap),tangent=-halfWidth*Mathf.sinDeg(cap);
+            at=bandPoint(band,at,x,y,angle,Mathf.cosDeg(-halfArc)*(radius+radial)-Mathf.sinDeg(-halfArc)*tangent,
+                Mathf.sinDeg(-halfArc)*(radius+radial)+Mathf.cosDeg(-halfArc)*tangent);
+        }
+        return band;
     }
+    private static int bandPoint(float[] band,int at,float x,float y,float angle,float localX,float localY){
+        localX*=UtilityBalance.shieldDepth;
+        band[at++]=x+Angles.trnsx(angle,localX,localY);
+        band[at++]=y+Angles.trnsy(angle,localX,localY);
+        return at;
+    }
+    private static final EarClippingTriangulator shieldTriangles=new EarClippingTriangulator();
     private static void fillBand(float[] v){
-        int points=v.length/4;
-        for(int i=0;i<points-1;i++){
-            int a=i*2,b=a+2,c=(points*2-2-i)*2,d=c+2;
-            Fill.quad(v[a],v[a+1],v[b],v[b+1],v[c],v[c+1],v[d],v[d+1]);
+        // A C-shaped band is concave; a triangle fan would fill its open interior.
+        var indices=shieldTriangles.computeTriangles(v);
+        for(int i=0;i<indices.size;i+=3){
+            int a=indices.items[i]*2,b=indices.items[i+1]*2,c=indices.items[i+2]*2;
+            Fill.tri(v[a],v[a+1],v[b],v[b+1],v[c],v[c+1]);
         }
     }
     public static boolean intersects(float[] v,float x,float y,float nx,float ny){
@@ -263,8 +278,8 @@ public final class UtilityService{
                     nearest=Math.min(nearest,Mathf.dst(beams[at],beams[at+1],hit.x,hit.y));
                 }
             }
-            // Leave room for the native shader'state two-unit rim and the line'state rounded cap.
-            float fraction=length==0f?0f:Math.max(0f,nearest-3f)/length;
+            // Meet the inner rim without extending the line through the shield band.
+            float fraction=length==0f?0f:Math.max(0f,nearest-.6f)/length;
             beams[at+2]=beams[at]+dx*fraction;beams[at+3]=beams[at+1]+dy*fraction;
         }
         return beams;
@@ -287,17 +302,35 @@ public final class UtilityService{
         Draw.color(colour(ship));Draw.alpha(.42f);Lines.stroke(1.1f);
         for(int i=0;i<beams.length;i+=4){
             float x=beams[i],y=beams[i+1],tx=beams[i+2],ty=beams[i+3];
-            int steps=Math.max(2,Mathf.ceil(Mathf.dst(x,y,tx,ty)/1.5f));
-            Lines.beginLine();
+            float length=Math.max(.001f,Mathf.dst(x,y,tx,ty));
+            int steps=Math.max(2,Mathf.ceil(length/1.2f));
+            float[] path=new float[(steps+1)*2];
             for(int j=0;j<=steps;j++){
                 float t=j/(float)steps,px=Mathf.lerp(x,tx,t),py=Mathf.lerp(y,ty,t);
+                float envelope=Mathf.sin(t*Mathf.PI);
+                float wave=envelope*(1.8f*Mathf.sin(t*Mathf.PI*3f-Time.time*.09f+i)
+                    +.45f*Mathf.sin(t*Mathf.PI*6f+Time.time*.065f));
+                px-=(ty-y)/length*wave;py+=(tx-x)/length*wave;
                 ripple(point,px,py);
                 // Stay attached to the physical muzzle; blend into the field'state ripple near the gun.
                 float blend=Mathf.clamp(t*5f);
-                Lines.linePoint(Mathf.lerp(px,point.x,blend),Mathf.lerp(py,point.y,blend));
+                path[j*2]=Mathf.lerp(px,point.x,blend);path[j*2+1]=Mathf.lerp(py,point.y,blend);
             }
-            Lines.endLine();
-            Fill.circle(x,y,.7f);
+            // A translucent carrier and travelling scan bands give the projection depth and motion.
+            Draw.color(colour(ship));Draw.alpha(.1f);Lines.stroke(2.4f);Lines.polyline(path,path.length,false);
+            Lines.stroke(.8f);
+            for(int j=0;j<steps;j++){
+                float scan=Mathf.mod(j*.18f-Time.time*.035f+i*.3f,1f);
+                Draw.alpha(scan<.58f?.2f:.55f);
+                Lines.line(path[j*2],path[j*2+1],path[j*2+2],path[j*2+3],false);
+            }
+            // A small live emitter glow makes the gun-to-field connection readable.
+            float pulse=.5f+.5f*Mathf.sin(Time.time*.14f+i);
+            Draw.color(colour(ship));Draw.alpha(.2f+.1f*pulse);Fill.circle(x,y,1.8f+.35f*pulse);
+            Draw.alpha(.8f);Lines.stroke(.45f);Lines.circle(x,y,1.15f+.2f*pulse);
+            shipyard.graphics.EngineHighlights.draw(colour(ship),.55f);
+            Draw.alpha(.9f);Fill.circle(x,y,.65f);
+            Draw.color(colour(ship));Draw.alpha(.42f);Lines.stroke(1.1f);
         }
         Draw.reset();
     }

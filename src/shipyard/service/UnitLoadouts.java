@@ -27,6 +27,7 @@ public final class UnitLoadouts{
         final UnitType view;
         final ShipCosmetics cosmetics;
         Unit bound;
+        mindustry.entities.units.WeaponMount[] mounts;
         Entry(ShipTier tier, ShipLoadout loadout, ShipCosmetics cosmetics){
             this(tier,loadout,cosmetics,ShipVariants.get(tier,loadout,cosmetics));
         }
@@ -147,20 +148,25 @@ public final class UnitLoadouts{
         ShipTier tier=ShipTier.of(unit.type);
         ShipLoadout loadout=ShipVariants.current(unit.type);
         ShipCosmetics cosmetics=ShipVariants.cosmetics(unit.type);
-        Entry entry=new Entry(tier,loadout,cosmetics,unit.type);entry.bound=unit;entries.put(unit.id,entry);
+        Entry entry=new Entry(tier,loadout,cosmetics,unit.type);entry.bound=unit;entry.mounts=unit.mounts;entries.put(unit.id,entry);
         if(Vars.net.server()) Call.clientPacketReliable(packet, epoch + "," + unit.id + "," + tier.ordinal()
             + "," + loadout.stats() + "," + cosmetics.encode() + "," + loadout.weapon().name());
     }
 
     private static void attach(Unit unit, Entry entry){
+        // Native neutral-hull snapshots may rebuild mounts when the barrel count differs.
+        // Their readMounts has already updated these cached objects before setType runs.
+        var prior=unit.mounts;
+        if(entry.bound==unit && entry.mounts!=null && prior.length!=entry.view.weapons.size)prior=entry.mounts;
         if(unit.type != entry.view){
             boolean counted = unit.isAdded() && unit.type.id != entry.view.id;
             if(counted) unit.team.data().updateCount(unit.type, -1);
             unit.setType(entry.view);
+            unit.mounts=prior;
             if(counted) unit.team.data().updateCount(entry.view, 1);
         }
         shipyard.content.ShipWeapons.bind(unit);
-        entry.bound = unit;
+        entry.bound = unit;entry.mounts=unit.mounts;
     }
 
     /** Reattach after a native snapshot restores the registered, neutral hull type. */

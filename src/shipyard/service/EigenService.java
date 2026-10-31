@@ -158,7 +158,7 @@ public final class EigenService{
         if(timer>=12f)timer=0;
         if(motionTimer>=3f)motionTimer%=3f;
     }
-    /** Launch through alternating physical muzzles, using the same native transform as the gun sprite. */
+    /** Launch through the active mount, using the same native transform as the gun sprite. */
     private static Unit launch(Unit ship,State state,int slot){
         var mount=ship.mounts[state.launchMount%ship.mounts.length];var gun=mount.weapon;
         state.launchMount=(state.launchMount+1)%ship.mounts.length;

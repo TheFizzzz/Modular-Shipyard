@@ -13,8 +13,10 @@ public class ModularShipyardMod extends Mod{
     @Override
     public void init(){
         UnitLoadouts.init();
+        shipyard.service.FreezeDiagnostics.init();
         shipyard.content.ShipWeapons.init();
         ProjectileColours.init();
+        shipyard.graphics.WorkBeams.init();
         shipyard.service.WeaponMotion.init();
         shipyard.service.VectorReload.init();
         LoadoutService.init();

@@ -13,10 +13,28 @@ final class InvolutionChecks{
         Vars.world.loadGenerator(128,128,t->{t.fill();t.eachTile(tile->tile.setFloor(Blocks.stone.asFloor()));});
         Time.setDeltaProvider(()->1f);Time.delta=1f;
         int registered=Vars.content.bullets().size;
+        checkWeaponSwaps();
         for(int tier=0;tier<3;tier++){
             Unit ship=new mindustry.type.UnitType[]{UnitTypes.alpha,UnitTypes.beta,UnitTypes.gamma}[tier].create(Team.sharded);
             ship.dead=false;ship.spawnedByCore=true;ship.set(320,400);ship.rotation=0;ship.add();
-            ExperimentalChecks.equip(ship,tier,"lancer");var type=ship.mounts[0].weapon.bullet;
+            ExperimentalChecks.equip(ship,tier,"lancer");
+            var readiness=ExperimentalChecks.weapons.getMethod("bladeReadiness",Unit.class,mindustry.entities.units.WeaponMount.class);
+            for(var mount:ship.mounts)near((float)readiness.invoke(null,ship,mount),1f,"ready cradle missing blade");
+            int launchedIndex=-1;
+            for(int frame=0;frame<90 && launchedIndex<0;frame++){
+                ExperimentalChecks.fire(ship,ship.x+120,ship.y,1);
+                for(int i=0;i<ship.mounts.length;i++)if(ship.mounts[i].totalShots>0){launchedIndex=i;break;}
+            }
+            check(launchedIndex>=0,"cradle gun never launched");var launched=ship.mounts[launchedIndex];
+            near((float)readiness.invoke(null,ship,launched),0f,"launched blade still seated");
+            ship.isShooting=false;ship.controlWeapons(false,false);
+            for(int frame=0;frame<40;frame++)for(var mount:ship.mounts)mount.weapon.update(ship,mount);
+            float reforming=(float)readiness.invoke(null,ship,launched);
+            check(reforming>0f && reforming<1f,"blade did not reform during reload");
+            for(int frame=0;frame<50;frame++)for(var mount:ship.mounts)mount.weapon.update(ship,mount);
+            near((float)readiness.invoke(null,ship,launched),1f,"blade not ready after reload");
+            Groups.bullet.clear();
+            var type=ship.mounts[0].weapon.bullet;
             near(type.range,198.72f,"blade outward reach");
             check(ship.mounts[0].weapon.shoot.firstShotDelay==0f,"blade retained charge delay");
             Unit target=ExperimentalChecks.enemy(UnitTypes.dagger,ship.x+80,ship.y);target.armor=0;
@@ -89,6 +107,29 @@ final class InvolutionChecks{
         InvolutionRecallChecks.run();
         check(Vars.content.bullets().size==registered,"blade flight/palettes registered content IDs");
         System.out.println("PASS: Involution exact retrace/small-target double hit, alternating native cadence, two-target outgoing cap, ally safety, private collision flags, moving-owner steering/catch and removed-owner cleanup, all tiers");
+    }
+    static void checkWeaponSwaps()throws Exception{
+        var install=Vars.mods.getMod("modular-shipyard").loader.loadClass("shipyard.service.UnitLoadouts")
+            .getMethod("install",Unit.class,ExperimentalChecks.tiers,ExperimentalChecks.model,ExperimentalChecks.colours);
+        for(int tier=0;tier<3;tier++)for(String source:new String[]{"standard","flamethrower","railgun","superfactorial","invariant"})for(int phase=0;phase<4;phase++){
+            Unit ship=new mindustry.type.UnitType[]{UnitTypes.alpha,UnitTypes.beta,UnitTypes.gamma}[tier].create(Team.sharded);
+            ship.set(320,400);ship.rotation=0;ship.spawnedByCore=true;ship.add();
+            ExperimentalChecks.equip(ship,tier,source);
+            for(int i=0;i<ship.mounts.length;i++){ship.mounts[i].side=(phase&(1<<(i%2)))!=0;ship.mounts[i].totalShots=0;}
+            install.invoke(null,ship,ExperimentalChecks.tiers.getEnumConstants()[tier],ExperimentalChecks.loadout("lancer"),ExperimentalChecks.palette);
+            ExperimentalChecks.fire(ship,ship.x+120,ship.y,180);
+            int shots=0;for(var mount:ship.mounts)shots+=mount.totalShots;
+            check(shots>=2,"Involution stalled after swapping from "+source+" tier="+tier+" phase="+phase);
+            boolean[] side=new boolean[ship.mounts.length];float[] reload=new float[ship.mounts.length];
+            for(int i=0;i<ship.mounts.length;i++){side[i]=ship.mounts[i].side;reload[i]=ship.mounts[i].reload;}
+            install.invoke(null,ship,ExperimentalChecks.tiers.getEnumConstants()[tier],ExperimentalChecks.loadout("lancer"),ExperimentalChecks.colours.getField("defaults").get(null));
+            for(int i=0;i<ship.mounts.length;i++){
+                check(ship.mounts[i].side==side[i],"cosmetic edit reset Involution alternating phase");
+                near(ship.mounts[i].reload,reload[i],"cosmetic edit reset Involution reload");
+            }
+            ship.remove();Groups.bullet.clear();
+        }
+        System.out.println("PASS: Involution fires after 60 native weapon swaps across source mount counts and alternating phases");
     }
     static void tick(){Time.update();Vars.state.teams.updateTeamStats();Groups.unit.updatePhysics();Groups.bullet.updatePhysics();Groups.bullet.update();Groups.bullet.collide();}
     static void check(boolean ok,String why){ExperimentalChecks.check(ok,why);}

@@ -59,6 +59,9 @@ public final class ProjectileColours{
             else if(owner.type instanceof ShipVariant hull && hull.cosmetics().engine() != -1){
                 effect.color.set(hull.engineColor);
             }
+            if((selected || owner.type instanceof ShipVariant hull && hull.cosmetics().engine()!=-1)
+                && (effect.effect==nativeShot.shootEffect || effect.effect==nativeShot.smokeEffect || effect.effect==mindustry.content.Fx.shootSmallColor))
+                effect.color.lerp(arc.graphics.Color.white,shipyard.graphics.EngineHighlights.mix(effect.color,0f));
         }
     }
 
